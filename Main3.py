@@ -1,12 +1,13 @@
 """
 Script para scrapear la agenda de eventos de Hola TD SYNNEX (mes actual)
-y extraer, de cada evento: nombre, descripción, fecha, hora de inicio
-y hora de fin.
+y guardar, de cada evento: nombre, descripción, fecha, hora de inicio,
+hora de fin y el texto crudo en un archivo JSON.
 
 Uso:
-    python scraping_agenda_tdsynnex.py
+    python scraper_tdsynnex_dataset.py
 """
 
+import json
 import logging
 import re
 from datetime import datetime
@@ -19,7 +20,7 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)-8s | %(message)s",
     datefmt="%H:%M:%S",
 )
-log = logging.getLogger("agenda_tdsynnex")
+log = logging.getLogger("agenda_tdsynnex_json")
 
 DOMINIO = "https://www.holatdsynnex.com"
 USER_AGENT = (
@@ -35,14 +36,12 @@ PATRON_FECHA_HORA = re.compile(
     r"(\d{2}/\d{2}/\d{4})\D{0,10}?(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2})"
 )
 
-
 def construir_url_mes_actual() -> str:
     """Arma la URL de la agenda para el mes y año actuales, según el
     patrón observado en el sitio: agenda_0_0_<mes>_<anio>.html
     """
     ahora = datetime.now()
     return f"{DOMINIO}/agenda_0_0_{ahora.month}_{ahora.year}.html"
-
 
 def extraer_links_eventos(browser: Browser, url: str, espera_extra_ms: int = 3000) -> list[str]:
     """Abre la página de agenda del mes, espera a que cargue el contenido
@@ -81,7 +80,6 @@ def extraer_links_eventos(browser: Browser, url: str, espera_extra_ms: int = 300
     log.info(f"Se identificaron {len(urls_eventos)} eventos únicos para el mes actual.")
     return sorted(urls_eventos)
 
-
 def extraer_detalle_evento(browser: Browser, url: str) -> dict | None:
     """Abre la página de detalle de un evento y extrae nombre, descripción,
     fecha, hora de inicio y hora de fin.
@@ -116,6 +114,7 @@ def extraer_detalle_evento(browser: Browser, url: str) -> dict | None:
             fecha, hora_inicio, hora_fin = None, None, None
             log.warning(f"No se encontró patrón de fecha/hora en: {url}")
 
+        # Añadimos texto_crudo_html para mantener la consistencia con los otros scripts
         return {
             "nombre": nombre,
             "descripcion": descripcion,
@@ -123,6 +122,7 @@ def extraer_detalle_evento(browser: Browser, url: str) -> dict | None:
             "hora_inicio": hora_inicio,
             "hora_fin": hora_fin,
             "url": url,
+            "texto_crudo_html": texto_completo.strip()
         }
     except Exception as e:
         log.error(f"No se pudo procesar el evento ({url}): {e}")
@@ -130,16 +130,15 @@ def extraer_detalle_evento(browser: Browser, url: str) -> dict | None:
     finally:
         pagina.close()
 
-
 def main():
     url_agenda = construir_url_mes_actual()
+    eventos = []
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         try:
             urls_eventos = extraer_links_eventos(browser, url_agenda)
 
-            eventos = []
             for i, url_evento in enumerate(urls_eventos, start=1):
                 log.info(f"[{i}/{len(urls_eventos)}] Procesando evento: {url_evento}")
                 detalle = extraer_detalle_evento(browser, url_evento)
@@ -148,16 +147,12 @@ def main():
         finally:
             browser.close()
 
-    print(f"\n=== {len(eventos)} eventos encontrados ===\n")
-    for e in eventos:
-        print(f"Nombre       : {e['nombre']}")
-        print(f"Fecha        : {e['fecha']}")
-        print(f"Hora inicio  : {e['hora_inicio']}")
-        print(f"Hora fin     : {e['hora_fin']}")
-        print(f"Descripción  : {e['descripcion']}")
-        print(f"URL          : {e['url']}")
-        print("-" * 80)
+    # Guardar en archivo JSON
+    nombre_archivo = "dataset_tdsynnex_events.json"
+    with open(nombre_archivo, "w", encoding="utf-8") as f:
+        json.dump(eventos, f, ensure_ascii=False, indent=4)
 
+    log.info(f"\n=== Extracción completada. {len(eventos)} eventos guardados en '{nombre_archivo}' ===")
 
 if __name__ == "__main__":
     main()
