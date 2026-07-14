@@ -1,13 +1,10 @@
 import os
+import json
 import logging
+import asyncio
 from typing import Optional
 
-import pandas as pd
-from dotenv import load_dotenv
-from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
-from pydantic import BaseModel, Field
-from langchain_google_genai import ChatGoogleGenerativeAI
-from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 
 # ============================================================
 # CONFIGURACIÓN
@@ -15,17 +12,13 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 URL_BASE = "https://www.bbc.com/mundo/topics/cyx5krnw38vt" # Sección de Tecnología
 LIMITE_NOTICIAS = 15
 
-MODELO_GEMINI = "gemini-3.1-flash-lite"
-TEMPERATURA_LLM = 0.1
-
-ARCHIVO_SALIDA_EXCEL = "noticias_bbc_tecnologia.xlsx"
+ARCHIVO_SALIDA_JSON = "dataset_bbc_tecnologia.json"
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
 
-# Selector flexible para capturar los enlaces a los artículos de la BBC
 SELECTOR_LINKS_NOTICIA = 'a[href*="/mundo/articles/"], a[href*="/mundo/noticias-"]'
 
 logging.basicConfig(
@@ -33,161 +26,138 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)-8s | %(message)s",
     datefmt="%H:%M:%S",
 )
-log = logging.getLogger("bbc_tecnologia_llm")
-
-
-# ============================================================
-# 1. ESQUEMA DE SALIDA ESTRICTO PARA NOTICIAS
-# ============================================================
-class NoticiaBBC(BaseModel):
-    # Obligatorios
-    titulo: str = Field(description="Título principal de la noticia o artículo.")
-    resumen_ejecutivo: str = Field(description="Un resumen conciso y sólido de la noticia (3-5 frases) que sintetice los hechos clave.")
-    fecha_publicacion: str = Field(description="Fecha de publicación o actualización mencionada en el texto. Si no aparece, 'No especificado'.")
-    enlace_detalle: str = Field(description="URL de la noticia (se completa automáticamente, no la infieras del texto).")
-
-    # Opcionales / Extraídos por el LLM si existen
-    temas_clave: Optional[str] = Field(None, description="Lista de palabras clave o subtemas tecnológicos principales separados por comas (ej: Inteligencia Artificial, Regulación, Apple).")
-    entidades_mencionadas: Optional[str] = Field(None, description="Empresas, personas o países importantes que protagonizan la nota.")
-    tono_noticia: Optional[str] = Field(None, description="Tono de la nota (ej: Informativo, Alarmante, Crítico, Optimista).")
-
+log = logging.getLogger("bbc_tecnologia_scraper")
 
 # ============================================================
-# 2. EXTRACTOR LLM
+# NAVEGACIÓN Y CAPTURA DE TEXTO (Playwright Asíncrono)
 # ============================================================
-def crear_extractor_llm():
-    load_dotenv()
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        raise ValueError("No se encontró GEMINI_API_KEY en el entorno (.env)")
-
-    llm = ChatGoogleGenerativeAI(
-        model=MODELO_GEMINI,
-        temperature=TEMPERATURA_LLM,
-        google_api_key=api_key,
-    )
-    return llm.with_structured_output(NoticiaBBC)
-
-
-@retry(
-    stop=stop_after_attempt(3),
-    wait=wait_exponential(multiplier=2, min=2, max=15),
-    retry=retry_if_exception_type(Exception),
-    reraise=True,
-)
-def extraer_noticia_con_llm(extractor, texto_pagina: str, url: str) -> NoticiaBBC:
-    """Le pide al LLM que analice y resuma el texto de la noticia."""
-    prompt = (
-        "Analiza el texto de esta noticia de BBC Mundo y extrae la información requerida. "
-        "Sé preciso y objetivo con el resumen ejecutivo. Si algún campo opcional no puede "
-        "deducirse del texto, déjalo como null.\n\n"
-        f"URL de la noticia: {url}\n\n"
-        f"TEXTO DEL ARTÍCULO:\n{texto_pagina[:8000]}"
-    )
-    resultado = extractor.invoke(prompt)
-    resultado.enlace_detalle = url  # Aseguramos que la URL real quede grabada
-    return resultado
-
-
-# ============================================================
-# 3. NAVEGACIÓN Y CAPTURA DE TEXTO (Playwright)
-# ============================================================
-def recolectar_links_noticias(pagina) -> list[str]:
-    """Busca los enlaces de los artículos en la página principal de Tecnología."""
+async def recolectar_links_noticias(pagina) -> list[str]:
+    """Busca los enlaces de los artículos en la página principal."""
     anchors = pagina.locator(SELECTOR_LINKS_NOTICIA)
-    total = anchors.count()
+    total = await anchors.count()
     links = []
     vistos = set()
     
     for i in range(total):
-        href = anchors.nth(i).get_attribute("href")
-        if href:
-            # Asegurar URL absoluta si la BBC usa rutas relativas
-            if href.startswith("/"):
-                href = f"https://www.bbc.com{href}"
+        try:
+            href = await anchors.nth(i).get_attribute("href")
+            if href:
+                if href.startswith("/"):
+                    href = f"https://www.bbc.com{href}"
+                
+                if href not in vistos and "topics" not in href:
+                    links.append(href)
+                    vistos.add(href)
+        except Exception:
+            pass
             
-            if href not in vistos and "topics" not in href:
-                links.append(href)
-                vistos.add(href)
     return links
 
-
-def obtener_texto_noticia(pagina, url: str) -> Optional[str]:
-    """Navega a la noticia y extrae el texto limpio del cuerpo del artículo."""
+async def extraer_detalle_noticia(pagina, url: str) -> dict | None:
+    """Navega a la noticia y extrae el título, fecha y texto crudo."""
+    detalle = {
+        "url_noticia": url,
+        "titulo": None,
+        "fecha_publicacion": None,
+        "texto_crudo_html": None
+    }
+    
     try:
-        pagina.goto(url, wait_until="domcontentloaded", timeout=30000)
-        pagina.wait_for_timeout(2000)
+        # Cambiamos a "commit" para evitar que se congele esperando recursos externos (anuncios)
+        await pagina.goto(url, wait_until="commit", timeout=30000)
+        await asyncio.sleep(2)
         
-        # Intentamos capturar el contenido del artículo de forma limpia. 
-        # Si falla, recurrimos al body completo.
-        article_locator = pagina.locator("main")
-        if article_locator.count() > 0:
-            return article_locator.first.inner_text()
-        return pagina.locator("body").inner_text()
+        # 1. Título
+        try:
+            h1_el = pagina.locator("h1").first
+            if await h1_el.is_visible():
+                detalle["titulo"] = (await h1_el.inner_text()).strip()
+            else:
+                detalle["titulo"] = (await pagina.title()).strip()
+        except:
+            detalle["titulo"] = (await pagina.title()).strip()
+
+        # 2. Fecha de publicación
+        try:
+            time_el = pagina.locator("time").first
+            if await time_el.is_visible():
+                detalle["fecha_publicacion"] = (await time_el.inner_text()).strip()
+        except:
+            pass
+            
+        # 3. Texto crudo
+        try:
+            article_locator = pagina.locator("main")
+            if await article_locator.count() > 0:
+                detalle["texto_crudo_html"] = (await article_locator.first.inner_text()).strip()
+            else:
+                detalle["texto_crudo_html"] = (await pagina.locator("body").inner_text()).strip()
+        except Exception as e:
+            log.warning(f"No se pudo extraer texto de {url}: {e}")
+            
+        return detalle
+
     except Exception as e:
         log.warning(f"No se pudo abrir la noticia {url}: {e}")
         return None
 
-
 # ============================================================
-# 4. ORQUESTADOR PRINCIPAL
+# ORQUESTADOR PRINCIPAL
 # ============================================================
-def main():
-    extractor = crear_extractor_llm()
-    noticias_procesadas: list[NoticiaBBC] = []
+async def main():
+    noticias_procesadas = []
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        pagina = browser.new_page(user_agent=USER_AGENT, viewport={"width": 1440, "height": 900})
+    # Inicializamos Playwright en modo asíncrono
+    async with async_playwright() as p:
+        # headless=False para que se ejecute con interfaz gráfica y poder depurar bloqueos
+        browser = await p.chromium.launch(headless=False) 
+        pagina = await browser.new_page(user_agent=USER_AGENT, viewport={"width": 1440, "height": 900})
 
-        log.info(f"Paso 1: Recolectando enlaces desde la portada de tecnología: {URL_BASE}")
+        log.info(f"Paso 1: Recolectando enlaces desde la portada: {URL_BASE}")
         try:
-            pagina.goto(URL_BASE, wait_until="domcontentloaded", timeout=45000)
-            pagina.wait_for_timeout(3000)
+            # Usar "commit" ayuda a acelerar la carga saltándose elementos bloqueantes
+            await pagina.goto(URL_BASE, wait_until="commit", timeout=45000)
+            await asyncio.sleep(3)
         except PlaywrightTimeoutError as e:
             log.error(f"Timeout al cargar la portada principal: {e}")
-            browser.close()
+            await browser.close()
             return
 
-        links = recolectar_links_noticias(pagina)
-        links = links[:LIMITE_NOTICIAS] # Aplicamos el límite configurado
+        links = await recolectar_links_noticias(pagina)
+        links = links[:LIMITE_NOTICIAS]
         log.info(f"Se encontraron {len(links)} noticias para procesar.")
 
-        log.info("Paso 2: Extrayendo y resumiendo contenido con Gemini...")
+        log.info("Paso 2: Extrayendo contenido crudo de las noticias...")
         for i, url in enumerate(links, start=1):
             log.info(f"  [{i}/{len(links)}] {url}")
-            texto = obtener_texto_noticia(pagina, url)
             
-            if not texto or len(texto.strip()) < 200:
-                log.warning("    Texto insuficiente o página vacía. Saltando...")
-                continue
-                
-            try:
-                noticia_estructurada = extraer_noticia_con_llm(extractor, texto, url)
-                noticias_procesadas.append(noticia_estructurada)
-                log.info(f"    ✓ Resumido con éxito: '{noticia_estructurada.titulo[:40]}...'")
-            except Exception as e:
-                log.error(f"  Falló la extracción LLM para {url}: {e}")
+            detalle = await extraer_detalle_noticia(pagina, url)
+            
+            if detalle and detalle.get("texto_crudo_html") and len(detalle["texto_crudo_html"]) > 200:
+                noticias_procesadas.append(detalle)
+                log.info(f"    ✓ Extraída con éxito: '{str(detalle.get('titulo'))[:40]}...'")
+            else:
+                 log.warning("    Texto insuficiente o página vacía. Saltando...")
 
-        browser.close()
+        await browser.close()
 
-    # --- Exportar resultados ---
+    # --- Exportar resultados a JSON ---
     if not noticias_procesadas:
-        log.warning("No se procesó ninguna noticia. No se genera el archivo Excel.")
+        log.warning("No se procesó ninguna noticia. No se genera el archivo JSON.")
         return
 
-    df = pd.DataFrame([n.model_dump() for n in noticias_procesadas])
-    
-    # Ordenamos las columnas del Excel
-    columnas_orden = [
-        "titulo", "resumen_ejecutivo", "fecha_publicacion", 
-        "temas_clave", "entidades_mencionadas", "tono_noticia", "enlace_detalle"
-    ]
-    df = df[[c for c in columnas_orden if c in df.columns]]
-    df.to_excel(ARCHIVO_SALIDA_EXCEL, index=False, engine="openpyxl")
+    with open(ARCHIVO_SALIDA_JSON, "w", encoding="utf-8") as f:
+        json.dump(noticias_procesadas, f, ensure_ascii=False, indent=4)
 
-    log.info(f"\n=== {len(noticias_procesadas)} noticias resumidas y exportadas a '{ARCHIVO_SALIDA_EXCEL}' ===")
-
+    log.info(f"\n=== {len(noticias_procesadas)} noticias extraídas y guardadas en '{ARCHIVO_SALIDA_JSON}' ===")
 
 if __name__ == "__main__":
-    main()
+    # Importante usar el loop asyncio para entornos Windows
+    if os.name == 'nt':
+        asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+    
+    # Manejo de la interrupción manual
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        log.warning("\n[!] Ejecución interrumpida manualmente por el usuario (Ctrl+C).")
