@@ -57,8 +57,6 @@ def extraer_detalle_completo(pagina, url: str) -> dict:
             
         # 2. Fecha y hora 
         try:
-            # En msevents suele haber un contenedor con clases específicas para el tiempo,
-            # pero es más seguro buscar el icono de calendario/reloj o contenedores cercanos al título
             time_elements = pagina.locator("div[class*='time'], div[class*='date'], time").all()
             if time_elements:
                 detalle["fecha_y_hora"] = " | ".join([el.inner_text().strip() for el in time_elements[:2]])
@@ -67,7 +65,6 @@ def extraer_detalle_completo(pagina, url: str) -> dict:
 
         # 3. Descripción
         try:
-            # Buscamos contenedores típicos de descripción
             desc_el = pagina.locator("div[class*='description'], section[class*='description']").first
             if desc_el.is_visible():
                 detalle["descripcion_completa"] = desc_el.inner_text().strip()
@@ -76,8 +73,6 @@ def extraer_detalle_completo(pagina, url: str) -> dict:
 
         # 4. Texto crudo: La clave de este script
         try:
-            # Extraemos todo el texto del cuerpo.
-            # En la estructura de Microsoft, a veces el contenido está en un #root o main
             main_container = pagina.locator("main, #root, #mainContent").first
             if main_container.is_visible():
                  detalle["texto_crudo_html"] = main_container.inner_text().strip()
@@ -91,7 +86,12 @@ def extraer_detalle_completo(pagina, url: str) -> dict:
 
     return detalle
 
-def main():
+
+def scrape_microsoft_events() -> list:
+    """
+    Función que maneja todo el proceso de scraping del catálogo y las páginas individuales.
+    Retorna la lista de eventos extraídos.
+    """
     eventos_extraidos = []
     vistos = set()
 
@@ -178,13 +178,27 @@ def main():
             eventos_extraidos.append(datos_evento)
 
         browser.close()
-
-    # -- PASO 3: Guardar el Dataset --
-    nombre_archivo = "dataset_microsoft_events.json"
-    with open(nombre_archivo, "w", encoding="utf-8") as f:
-        json.dump(eventos_extraidos, f, ensure_ascii=False, indent=4)
         
-    log.info(f"¡Extracción completada! Se guardaron {len(eventos_extraidos)} eventos en '{nombre_archivo}'.")
+    return eventos_extraidos
 
+
+def ejecutar_scraper_microsoft_y_guardar(nombre_archivo="dataset_microsoft_events.json"):
+    """
+    Función principal que invoca el scraper y guarda la información en disco.
+    """
+    log.info("Iniciando el proceso de extracción de Microsoft Events...")
+    datos_eventos = scrape_microsoft_events()
+    
+    # -- PASO 3: Guardar el Dataset --
+    with open(nombre_archivo, "w", encoding="utf-8") as f:
+        json.dump(datos_eventos, f, ensure_ascii=False, indent=4)
+        
+    log.info(f"¡Extracción completada! Se guardaron {len(datos_eventos)} eventos en '{nombre_archivo}'.")
+    
+    return datos_eventos
+
+
+# Bloque de ejecución principal
 if __name__ == "__main__":
-    main()
+    # Puedes modificar el nombre del archivo enviándolo como parámetro
+    ejecutar_scraper_microsoft_y_guardar()

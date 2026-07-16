@@ -2,25 +2,10 @@ import os
 import json
 import logging
 import asyncio
-from typing import Optional
 
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 
-# ============================================================
-# CONFIGURACIÓN
-# ============================================================
-URL_BASE = "https://www.bbc.com/mundo/topics/cyx5krnw38vt" # Sección de Tecnología
-LIMITE_NOTICIAS = 15
-
-ARCHIVO_SALIDA_JSON = "dataset_bbc_tecnologia.json"
-
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-)
-
-SELECTOR_LINKS_NOTICIA = 'a[href*="/mundo/articles/"], a[href*="/mundo/noticias-"]'
-
+# Configuración del logger (suele dejarse global por estándar de Python)
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)-8s | %(message)s",
@@ -31,9 +16,9 @@ log = logging.getLogger("bbc_tecnologia_scraper")
 # ============================================================
 # NAVEGACIÓN Y CAPTURA DE TEXTO (Playwright Asíncrono)
 # ============================================================
-async def recolectar_links_noticias(pagina) -> list[str]:
+async def recolectar_links_noticias(pagina, selector_links) -> list[str]:
     """Busca los enlaces de los artículos en la página principal."""
-    anchors = pagina.locator(SELECTOR_LINKS_NOTICIA)
+    anchors = pagina.locator(selector_links)
     total = await anchors.count()
     links = []
     vistos = set()
@@ -102,29 +87,37 @@ async def extraer_detalle_noticia(pagina, url: str) -> dict | None:
         return None
 
 # ============================================================
-# ORQUESTADOR PRINCIPAL
+# ORQUESTADOR PRINCIPAL TOTALMENTE ENCAPSULADO
 # ============================================================
-async def main():
+
+async def scrape_bbc_news(
+    url_base="https://www.bbc.com/mundo/topics/cyx5krnw38vt", 
+    limite_noticias=15,
+    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    selector_links='a[href*="/mundo/articles/"], a[href*="/mundo/noticias-"]'
+) -> list:
+    """
+    Función asíncrona que maneja el scraping. Ahora recibe las configuraciones
+    como parámetros (con valores por defecto por si no se le pasan explícitamente).
+    """
     noticias_procesadas = []
 
-    # Inicializamos Playwright en modo asíncrono
     async with async_playwright() as p:
-        # headless=False para que se ejecute con interfaz gráfica y poder depurar bloqueos
         browser = await p.chromium.launch(headless=False) 
-        pagina = await browser.new_page(user_agent=USER_AGENT, viewport={"width": 1440, "height": 900})
+        pagina = await browser.new_page(user_agent=user_agent, viewport={"width": 1440, "height": 900})
 
-        log.info(f"Paso 1: Recolectando enlaces desde la portada: {URL_BASE}")
+        log.info(f"Paso 1: Recolectando enlaces desde la portada: {url_base}")
         try:
-            # Usar "commit" ayuda a acelerar la carga saltándose elementos bloqueantes
-            await pagina.goto(URL_BASE, wait_until="commit", timeout=45000)
+            await pagina.goto(url_base, wait_until="commit", timeout=45000)
             await asyncio.sleep(3)
         except PlaywrightTimeoutError as e:
             log.error(f"Timeout al cargar la portada principal: {e}")
             await browser.close()
-            return
+            return noticias_procesadas
 
-        links = await recolectar_links_noticias(pagina)
-        links = links[:LIMITE_NOTICIAS]
+        # Le pasamos el parámetro del selector que ahora vive en la función
+        links = await recolectar_links_noticias(pagina, selector_links)
+        links = links[:limite_noticias]
         log.info(f"Se encontraron {len(links)} noticias para procesar.")
 
         log.info("Paso 2: Extrayendo contenido crudo de las noticias...")
@@ -140,24 +133,51 @@ async def main():
                  log.warning("    Texto insuficiente o página vacía. Saltando...")
 
         await browser.close()
+        
+    return noticias_procesadas
+
+
+async def ejecutar_scraper_bbc_y_guardar(
+    nombre_archivo="dataset_bbc_tecnologia.json",
+    url_base="https://www.bbc.com/mundo/topics/cyx5krnw38vt", 
+    limite_noticias=15
+):
+    """
+    Función para guardar. Expone los parámetros más comunes (nombre del archivo, URL y límite)
+    para poder pasárselos a la función de scraping principal.
+    """
+    noticias_procesadas = await scrape_bbc_news(
+        url_base=url_base,
+        limite_noticias=limite_noticias
+    )
 
     # --- Exportar resultados a JSON ---
     if not noticias_procesadas:
         log.warning("No se procesó ninguna noticia. No se genera el archivo JSON.")
-        return
+        return []
 
-    with open(ARCHIVO_SALIDA_JSON, "w", encoding="utf-8") as f:
+    with open(nombre_archivo, "w", encoding="utf-8") as f:
         json.dump(noticias_procesadas, f, ensure_ascii=False, indent=4)
 
-    log.info(f"\n=== {len(noticias_procesadas)} noticias extraídas y guardadas en '{ARCHIVO_SALIDA_JSON}' ===")
+    log.info(f"\n=== {len(noticias_procesadas)} noticias extraídas y guardadas en '{nombre_archivo}' ===")
+    
+    return noticias_procesadas
 
+# ============================================================
+# BLOQUE DE EJECUCIÓN
+# ============================================================
 if __name__ == "__main__":
-    # Importante usar el loop asyncio para entornos Windows
     if os.name == 'nt':
         asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
     
-    # Manejo de la interrupción manual
     try:
-        asyncio.run(main())
+        # Ahora puedes cambiar los parámetros directamente desde la llamada:
+        # asyncio.run(ejecutar_scraper_bbc_y_guardar(
+        #     nombre_archivo="noticias_ciencia.json", 
+        #     url_base="https://www.bbc.com/mundo/topics/c40379e2ym4t", # URL de otra sección
+        #     limite_noticias=5
+        # ))
+        
+        asyncio.run(ejecutar_scraper_bbc_y_guardar())
     except KeyboardInterrupt:
         log.warning("\n[!] Ejecución interrumpida manualmente por el usuario (Ctrl+C).")

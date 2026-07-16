@@ -130,7 +130,12 @@ def extraer_detalle_evento(browser: Browser, url: str) -> dict | None:
     finally:
         pagina.close()
 
-def main():
+
+def scrape_tdsynnex_events() -> list:
+    """
+    Función que orquesta el scraping completo de TD SYNNEX.
+    Retorna la lista de eventos extraídos.
+    """
     url_agenda = construir_url_mes_actual()
     eventos = []
 
@@ -146,13 +151,30 @@ def main():
                     eventos.append(detalle)
         finally:
             browser.close()
+            
+    return eventos
+
+
+def ejecutar_scraper_tdsynnex_y_guardar(nombre_archivo="dataset_tdsynnex_events.json"):
+    """
+    Llama a la función de scraping y guarda los datos en un archivo JSON.
+    Recibe el nombre del archivo por parámetro para mayor flexibilidad.
+    """
+    log.info("Iniciando el proceso de extracción de TD SYNNEX...")
+    datos_eventos = scrape_tdsynnex_events()
 
     # Guardar en archivo JSON
-    nombre_archivo = "dataset_tdsynnex_events.json"
     with open(nombre_archivo, "w", encoding="utf-8") as f:
-        json.dump(eventos, f, ensure_ascii=False, indent=4)
+        json.dump(datos_eventos, f, ensure_ascii=False, indent=4)
 
-    log.info(f"\n=== Extracción completada. {len(eventos)} eventos guardados en '{nombre_archivo}' ===")
+    log.info(f"\n=== Extracción completada. {len(datos_eventos)} eventos guardados en '{nombre_archivo}' ===")
+    
+    # Retorna los datos por si se necesita usarlos directamente tras la ejecución
+    return datos_eventos
 
+
+# Bloque de ejecución principal
 if __name__ == "__main__":
-    main()
+    # Puedes pasarle un nombre distinto al archivo si lo deseas:
+    # ejecutar_scraper_tdsynnex_y_guardar("mis_eventos_synnex.json")
+    ejecutar_scraper_tdsynnex_y_guardar() 
