@@ -1,0 +1,3500 @@
+[
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Tech Brief: Azure Databases for AI Transformation",
+        "Descripcion": "Data is the fuel for AI, and the right AI-optimized databases can empower your teams to truly innovate.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-28",
+        "Hora": "13:00 - 14:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4200200909",
+        "Areas_Conocimiento": [
+            "Estrategia y Negocios Digitales",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura Cloud y Plataformas",
+            "Transformación Digital"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Learning Circle Live — AI Agents in Schools: Create, Govern, Scale",
+        "Descripcion": "In this special edition, Sean Tierney, Microsoft’s Director, Industry Advisor for Education, walks through the five-stage roadmap that takes a school from AI-curious to AI-ready.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-28",
+        "Hora": "21:00 - 22:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=157840255",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Copilot",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Co-Op - Partner Investments Community Call - July Office Hours 2026",
+        "Descripcion": "FY27 Co-op Marketing Funds session covering investment priorities, program updates, eligibility, prep needs, timelines, submission expectations, and partner resources, followed by open live Q&A.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-28",
+        "Hora": "22:00 - 23:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1596870614",
+        "Areas_Conocimiento": [
+            "Ciberseguridad",
+            "Finanzas y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Estrategia de Socios y Ecosistema",
+            "Programas de Inversión Tecnológica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "In person",
+        "Nombre de evento": "Microsoft Cloud and AI Innovation Day",
+        "Descripcion": "Join us for ‘Microsoft Cloud and AI Innovation Day’",
+        "Lugar": "Bengaluru, Karnataka, India",
+        "Fecha": "2026-07-28 / 2026-07-29",
+        "Hora": "22:00 GMT-5 / 05:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4278830038",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Cloud Computing y Estrategia Tecnológica",
+            "Infraestructura Cloud y Plataformas"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Powering AI Apps and Agents at Scale with Azure App Platform",
+        "Descripcion": "Powering AI Apps and Agents at Scale with Azure App Platform",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-28 / 2026-07-29",
+        "Hora": "22:30 GMT-5 / 00:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2369270523",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura Cloud y Plataformas",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Cloud and AI Innovation Day Digital Live",
+        "Descripcion": "A leadership forum bringing the latest innovations from Microsoft Build to India's technology decision-makers — and a practical path to put intelligent, agentic AI to work on Azure.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-28 / 2026-07-29",
+        "Hora": "22:30 GMT-5 / 02:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=904945459",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Cloud Computing y Estrategia Tecnológica",
+            "Infraestructura Cloud y Plataformas"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Partner Coaching Session - AI RACE Refuel Days Security Roundtable",
+        "Descripcion": "Join our AI RACE Refuel Days Security Roundtable partner coaching session, designed for Distributors and internal Microsoft teams to better understand FY27 positioning and narrative to confident",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-28 / 2026-07-29",
+        "Hora": "23:00 GMT-5 / 00:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2915727367",
+        "Areas_Conocimiento": [
+            "Ciberseguridad",
+            "Finanzas y Estrategia de Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Canal y Ecosistemas",
+            "Seguridad Digital"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent AI Race Partner Activation",
+        "Descripcion": "Join the Agent AI Race Partner Activation to learn campaign goals, engagement strategies, and key resources to accelerate AI adoption, drive customer conversations, and maximize participation",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "00:00 - 00:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1826362385",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Agentes Inteligentes",
+            "Cloud Computing y Estrategia Tecnológica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "AI Builders Episode 2: The Token Mindset: Thinking in Context and Cost from Day One",
+        "Descripcion": "Learn what tokens actually are, how context shapes both output quality and cost, and the habits that make every prompt land better.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "08:00 - 10:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1419188076",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Cloud Computing",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Security Immersion Event: Into the Breach",
+        "Descripcion": "Test your cybersecurity skills at the Microsoft Security Immersion Event: Into the Breach.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "10:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2157689843",
+        "Areas_Conocimiento": [
+            "Ciberseguridad"
+        ],
+        "Subareas_Conocimiento": [
+            "Seguridad Digital"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Americas MSP Community Call | July Edition",
+        "Descripcion": "Join Us for Microsoft’s Monthly Americas MSP Community Calls.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "10:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=921729670",
+        "Areas_Conocimiento": [
+            "Finanzas y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Estrategia de Socios y Ecosistema"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "AI Business Solutions - Partner Investments Community Call - July Office Hours 2026",
+        "Descripcion": "Join us for a FY27 AI Business Solutions Partner Investments overview covering priorities, program updates, eligibility, key timelines, resources, and live Q&A.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "10:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2169386562",
+        "Areas_Conocimiento": [
+            "Finanzas y Negocios",
+            "Infraestructura y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Estrategia Corporativa",
+            "Desarrollo Comercial y Ventas"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Tech Brief: Driving Revenue Growth with AI-Powered Sales",
+        "Descripcion": "This session is for sales and IT leaders who want to modernize CRM to drive revenue growth, improve seller productivity, and gain confidence in their pipeline and forecasts.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "11:00 - 12:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1589015813",
+        "Areas_Conocimiento": [
+            "Finanzas y Negocios",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo Comercial y Ventas",
+            "Inteligencia Artificial y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Cowork: Delegate your most complex tasks",
+        "Descripcion": "Explore how Microsoft 365 Copilot Cowork uses agentic AI to automate complex tasks, streamline workflows, and redefine how work gets done.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "11:00 - 12:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1787842212",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Informática"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Analítica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "SDC – Partner Investments Community Call – July 2026",
+        "Descripcion": "Join us for an overview of Fiscal Year 27 SDC hero programmatic incentives.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "11:00 - 12:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1823787939",
+        "Areas_Conocimiento": [
+            "Ciberseguridad",
+            "Finanzas y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Estrategia de Socios y Ecosistema",
+            "Programas de Inversión Tecnológica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Unlocking Intelligence with Dynamics 365, Dataverse & Microsoft Fabric",
+        "Descripcion": "Learn how to modernize your data estate, accelerate AI adoption, and unlock new business value.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "12:00 - 12:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1195373904",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Datos y Analítica Empresarial",
+            "Soluciones Microsoft"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Becoming AI Ready in Education Series | Building the Foundation: Moving from Microsoft...",
+        "Descripcion": "Becoming AI Ready in Education Series | Building the Foundation: Moving from Microsoft 365 A3 to A5 for an AI-ready Campus",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "14:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2852835",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Educación y Transformación Digital"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura Educativa",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Real-Time Intelligence in a Day - Quadrant Technologies - India",
+        "Descripcion": "Discover how Real-Time Intelligence can revolutionize your data, transforming it into a dynamic and actionable resource that drives value throughout your entire organization.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29 / 2026-07-30",
+        "Hora": "22:30 GMT-5 / 06:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3112090330",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Datos y Analítica Empresarial",
+            "Análisis de Datos e Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training: Get Started with Microsoft 365 Copilot and Agents",
+        "Descripcion": "Learn how to build, use, and share AI agents using Microsoft 365 Copilot Chat and Microsoft SharePoint to help automate business tasks, increase team collaboration, and improve productivity.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29",
+        "Hora": "22:30 - 23:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=416967858",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Agentes Inteligentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Power Hour: Reimagine Automation with Copilot Studio Workflows",
+        "Descripcion": "Join us in July to explore Copilot Studio Workflows—Microsoft’s agent-driven automation. See how AI-powered workflows reason, adapt, and act beyond rule-based flows.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29 / 2026-07-30",
+        "Hora": "23:00 GMT-5 / 00:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2200645318",
+        "Areas_Conocimiento": [
+            "Estrategia Corporativa y Productividad",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Adopción Tecnológica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Partner Pitch Coaching: AI RACE Refuel Days - AI Frontier Transformation",
+        "Descripcion": "Join our AI Frontier Transformation Pitch Coaching session, designed for Distributors and internal Microsoft teams to confidently deliver the AI Frontier Transformation Pitch.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-29 / 2026-07-30",
+        "Hora": "23:00 GMT-5 / 00:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=754414847",
+        "Areas_Conocimiento": [
+            "Finanzas y Negocios",
+            "Infraestructura y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Comunicación Estratégica y Ventas",
+            "Estrategia Corporativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training: Explore Microsoft 365 Copilot Chat",
+        "Descripcion": "Learn how to improve efficiency and foster collaboration by automating communication tasks across your organization using Microsoft 365 Copilot Chat and AI agents.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30",
+        "Hora": "00:00 - 01:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3788610934",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Security - Partner Investments Community Call - July Office Hours 2026",
+        "Descripcion": "Join an interactive FY27 Security Partner Investments session covering strategy, priorities, program updates, eligibility, timelines, requirements, resources, and live Q&A with experts.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30",
+        "Hora": "10:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2408184969",
+        "Areas_Conocimiento": [
+            "Ciberseguridad",
+            "Finanzas y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Seguridad Digital",
+            "Estrategia de Socios y Ecosistema"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Security Immersion Event: On the Brink",
+        "Descripcion": "Your data is crucial to your organization’s success and keeping that data secure is a top priority.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30",
+        "Hora": "11:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2031286507",
+        "Areas_Conocimiento": [
+            "Ciberseguridad",
+            "Tecnología e Informática"
+        ],
+        "Subareas_Conocimiento": [
+            "Seguridad Digital",
+            "Ciberseguridad y Protección de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agentic AI + GraphRAG: Transforming Scientific Research Workflows",
+        "Descripcion": "In this 60‑minute technical–storytelling session, you’ll learn how Agentic AI and Graph-based Retrieval-Augmented Generation (GraphRAG) create a unified reasoning layer across literature.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30",
+        "Hora": "11:00 - 12:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2694484349",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial Generativa",
+            "Inteligencia Artificial y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training: Get Started with Microsoft 365 Copilot and Agents",
+        "Descripcion": "Learn how to build, use, and share AI agents using Microsoft 365 Copilot Chat and Microsoft SharePoint to help automate business tasks, increase team collaboration, and improve productivity.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30",
+        "Hora": "11:00 - 12:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2801810108",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Agentes Inteligentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training: Explore Microsoft 365 Copilot Chat",
+        "Descripcion": "Learn how to improve efficiency and foster collaboration by automating communication tasks across your organization using Microsoft 365 Copilot Chat and AI agents.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30",
+        "Hora": "12:30 - 13:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4197379976",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Tech Brief: Migrate and Modernize Windows Server, SQL Server and .NET Apps",
+        "Descripcion": "Delve into comprehensive strategies for migrating and modernizing your Windows Server, SQL Server, and .NET estate with Microsoft Azure.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30",
+        "Hora": "13:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1700578104",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Cloud Computing",
+            "Desarrollo de Software y Aplicaciones"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - Koenig Solutions - New Zealand",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30 / 2026-07-31",
+        "Hora": "16:00 GMT-5 / 00:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1474220895",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "App in a Day - Koenig Solutions - Malaysia",
+        "Descripcion": "Digitize processes, build apps, and automate workflows—all without code using Power Apps.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30 / 2026-07-31",
+        "Hora": "20:00 GMT-5 / 04:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1067932216",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Build agentic AI solutions with Azure AI Foundry",
+        "Descripcion": "Advance your AI agent development skills using Azure AI Foundry Agent Service and the Semantic Kernel Agent Framework.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30 / 2026-07-31",
+        "Hora": "22:30 GMT-5 / 02:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1310183784",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones AI",
+            "Inteligencia Artificial Generativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Partner Coaching Session - AI RACE Refuel Days AI Business Solutions Roundtable",
+        "Descripcion": "Join our AI RACE Refuel Days AI Business Solutions Roundtable partner coaching session, designed for Distributors and internal Microsoft teams to better understand FY27 positioning and narrative",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-30 / 2026-07-31",
+        "Hora": "23:00 GMT-5 / 00:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3703981304",
+        "Areas_Conocimiento": [
+            "Finanzas y Negocios",
+            "Infraestructura y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Estrategia Corporativa",
+            "Desarrollo Comercial y Ventas"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Power Pages in a Day - Koenig Solutions - Saudi Arabia",
+        "Descripcion": "Learn to create secure, scalable websites with Power Pages using low-code tools and Dataverse.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-31",
+        "Hora": "01:00 - 09:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=684358900",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Aplicaciones y Low-Code",
+            "Plataformas Low-Code y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Koenig Solutions - Canada",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-31",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=162466311",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "SQL AI App in a Day - MAQ Software - United States",
+        "Descripcion": "Tailored for SQL developers and DBAs, this hands-on workshop teaches how to build secure AI-powered apps using T‑SQL and trusted SQL data.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-31",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=164941589",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones AI",
+            "Bases de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "App in a Day - Koenig Solutions - United States",
+        "Descripcion": "Digitize processes, build apps, and automate workflows—all without code using Power Apps.",
+        "Lugar": "Digital",
+        "Fecha": "2026-07-31",
+        "Hora": "11:00 - 19:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2082999943",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "In person",
+        "Nombre de evento": "Black Hat USA",
+        "Descripcion": "Black Hat USA",
+        "Lugar": "Las Vegas, Nevada, United States",
+        "Fecha": "2026-08-02 / 2026-08-05",
+        "Hora": "10:00 GMT-5 / 19:00 GMT-5",
+        "url": "https://microsoftsecurityevents.eventbuilder.com/events/11f160f889b3bd90bd56610069c622b2",
+        "Areas_Conocimiento": [
+            "Talento Humano y Ciencias Sociales"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo Humano y Social"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Introduction to Microsoft Power Platform",
+        "Descripcion": "Explore how to streamline operations, automate workflows, and build secure low-code solutions that enhance productivity and innovation with Microsoft Power Platform.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-02 / 2026-08-04",
+        "Hora": "22:30 GMT-5 / 02:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1426387643",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo Low-Code",
+            "Plataformas Low-Code y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Build AI Apps with Azure Database for PostgreSQL",
+        "Descripcion": "Learn how to enhance your organization’s productivity and deliver engaging user experiences by creating and deploying AI-powered apps using Azure Database for PostgreSQL.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-02 / 2026-08-04",
+        "Hora": "22:30 GMT-5 / 01:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=851830289",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis de Datos e Ingeniería"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Partnering for Frontier Transformation: FY27 EPS India Kick-Off",
+        "Descripcion": "Partnering for Frontier Transformation: FY27 EPS India Kick-Off",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-03",
+        "Hora": "00:30 - 02:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1812282307",
+        "Areas_Conocimiento": [
+            "Infraestructura y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Estrategia Corporativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Security Virtual Training Day: Strengthen Cloud Security with Microsoft...",
+        "Descripcion": "Learn how to apply strong, unified security measures across your cloud apps. And how to deploy a cloud-native application protection platform (CNAPP) strategy using Microsoft Defender for Cloud.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-03 / 2026-08-04",
+        "Hora": "03:00 GMT-5 / 06:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2557550901",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Ciberseguridad y Protección de Datos",
+            "Seguridad y Protección de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "App in a Day - Pragmatic Works - United States",
+        "Descripcion": "Digitize processes, build apps, and automate workflows—all without code using Power Apps.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-03",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3839575785",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - DataMartIn - United States",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-03",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2894869739",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Chat with Your Data in a Day - Pragmatic Works - United States",
+        "Descripcion": "Tailored for Power BI Data Analysts, this hands-on workshop teaches you to make models chat-ready, unlock insights with natural language, and optimize data for Copilot.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-03",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2078115851",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Ciencia de Datos y Analítica"
+        ],
+        "Subareas_Conocimiento": [
+            "Analítica de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - Inferifi - United States",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-03",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1043289560",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Becoming an AI-Ready School A five-stage roadmap — what works, what doesn't, and what's...",
+        "Descripcion": "In this special edition, Sean Tierney, Microsoft’s Director, Industry Advisor for Education, walks through the five-stage roadmap that takes a school from AI-curious to AI-ready.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-03",
+        "Hora": "21:00 - 22:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1159501239",
+        "Areas_Conocimiento": [
+            "Educación y Transformación Digital",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Copilot",
+            "Infraestructura Educativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Advaiya Solutions Inc - Belgium",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "02:00 - 10:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=868291660",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Executives",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for Executives to explore using Copilot your AI assistant. Demos show how Copilot helps enhance decision making, optimize communications and save time.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "03:00 - 04:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1508614094",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Copilot",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - iLink Digital - United Kingdom",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "03:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4177766009",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "GitHub Copilot Hands-on Lab",
+        "Descripcion": "GitHub Copilot Hands-on Lab",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "03:00 - 07:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1883013642",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "IA Generativa y Copilotos",
+            "Inteligencia Artificial y Copilot"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Marketing",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for Marketing to explore using Copilot as your own AI assistant - discover how Copilot helps create, coordinate, and deliver marketing content faster.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "04:00 - 05:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=354170701",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for IT",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for IT to explore using Copilot as your own AI assistant - discover how Copilot helps boost collaboration, provides insights and streamlines workflows.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "05:00 - 06:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=263226094",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for HR",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for HR to explore using Copilot as an AI assistant. Learn how to streamline recruiting steps, improve onboarding, and increase employee satisfaction.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "06:00 - 07:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1675947902",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - HexaCorp LLC - United States",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=941922453",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - OnPoint Insights LLC - United States",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1543838377",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis de Datos e Inteligencia de Negocios",
+            "Infraestructura y Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Chat with Your Data in a Day - Thorogood Associates - United States",
+        "Descripcion": "Tailored for Power BI Data Analysts, this hands-on workshop teaches you to make models chat-ready, unlock insights with natural language, and optimize data for Copilot.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=853510023",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Ciencia de Datos y Analítica"
+        ],
+        "Subareas_Conocimiento": [
+            "Analítica de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "App in a Day - Pragmatic Works - United States",
+        "Descripcion": "Digitize processes, build apps, and automate workflows—all without code using Power Apps.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3345472266",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Cloud and AI Platforms – Partner Investments Community Call – August Office Hours 2026",
+        "Descripcion": "Join an interactive session on FY27 Cloud & AI partner investments, covering strategy, updates, timelines, requirements, and resources, with expert insights and live Q&A.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "10:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1809913314",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Cloud Computing y Estrategia Tecnológica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Executives",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for Executives to explore using Copilot your AI assistant. Demos show how Copilot helps enhance decision making, optimize communications and save time.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "11:00 - 12:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3409115586",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Copilot",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - Fresche Solutions - United States",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "11:00 - 19:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2644522682",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Protect Sensitive Information in the AI Era with...",
+        "Descripcion": "Learn how to help safeguard, govern, and manage your organization’s sensitive data in the AI era using a single unified platform.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04 / 2026-08-05",
+        "Hora": "11:00 GMT-5 / 13:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2757710656",
+        "Areas_Conocimiento": [
+            "Estrategia Corporativa y Productividad",
+            "Tecnología e Informática"
+        ],
+        "Subareas_Conocimiento": [
+            "Ciberseguridad y Protección de Datos",
+            "Adopción Tecnológica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Discovery Hour: Innovate with Azure AI Apps and Agents",
+        "Descripcion": "Join us in the Microsoft Discovery Hour: Innovate with Azure AI Apps and Agents.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "12:00 - 13:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3461135924",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Desarrollo de IA Generativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Finance",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for Finance to explore fundamentals of using Copilot as your Al assistant to summarize data for financial insights, optimizes processes and saves time.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "12:00 - 13:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1745026568",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Operations",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for Operations to explore using Copilot as an AI assistant. See how Copilot helps enhance business operations and innovates with in-depth analysis.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "13:00 - 14:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2224395993",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Improving DLP Alert Precision in Microsoft Purview",
+        "Descripcion": "In a busy online environment, data security teams are often overburdened with a high number of data loss prevention alerts, many of which turn out to be false positives.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "13:00 - 14:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1078452992",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática"
+        ],
+        "Subareas_Conocimiento": [
+            "Ciberseguridad y Protección de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Sales",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for Sales to explore using Copilot as your own AI assistant. Through expert-led demos, discover how Copilot helps you generate leads and drive sales.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "14:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2951307547",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Discovery Session: Build Context-Aware Agents That Drive Real Business Decisions",
+        "Descripcion": "See Microsoft solutions in action through expert-led demos and customer scenarios. In just one hour, gain practical insights and next steps to accelerate innovation.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04",
+        "Hora": "20:00 - 21:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3420950477",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Inteligencia Artificial Generativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Predict and Defend Against Cybersecurity Threats",
+        "Descripcion": "Learn how to strengthen your cybersecurity posture by investigating threats, streamlining response, and disrupting attacks in real time using the Microsoft unified security operations platform.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-04 / 2026-08-06",
+        "Hora": "22:30 GMT-5 / 00:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=794204392",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática"
+        ],
+        "Subareas_Conocimiento": [
+            "Ciberseguridad y Protección de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Discovery Session: Build Context-Aware Agents That Drive Real Business Decisions",
+        "Descripcion": "See Microsoft solutions in action through expert-led demos and customer scenarios. In just one hour, gain practical insights and next steps to accelerate innovation.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "00:00 - 01:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=370987823",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Inteligencia Artificial Generativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Slalom Consulting - Germany, UK&I",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "02:00 - 10:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3432729274",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Discovery Session: Build Context-Aware Agents That Drive Real Business Decisions",
+        "Descripcion": "Microsoft Discovery Session: Build Context-Aware Agents That Drive Real Business Decisions",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "02:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3513388736",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Inteligencia Artificial Generativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - dataon - Denmark",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "02:00 - 10:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=900892500",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Create Agents in Microsoft Copilot Studio",
+        "Descripcion": "Learn to build and deploy custom AI agents in Microsoft Copilot Studio to automate workflows, enhance user experiences, and streamline processes across your organization.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05 / 2026-08-06",
+        "Hora": "03:00 GMT-5 / 05:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1095016581",
+        "Areas_Conocimiento": [
+            "Productividad y Estrategia Empresarial",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Automatización de Flujos de Trabajo",
+            "Desarrollo de Soluciones"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Migrate and Modernize Foundation",
+        "Descripcion": "Learn how to migrate and modernize your organization’s infrastructure, databases, and apps for increased performance and efficiency using Azure.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "03:00 - 07:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4207795029",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Discovery Session: Build Context-Aware Agents That Drive Real Business Decisions",
+        "Descripcion": "See Microsoft solutions in action through expert-led demos and customer scenarios. In just one hour, gain practical insights and next steps to accelerate innovation.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "05:00 - 06:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3784958091",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Inteligencia Artificial Generativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - Pragmatic Works - United States",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=931665138",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Softcrylic - United States",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3606355814",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Legal",
+        "Descripcion": "Minimize time spent on repetitive tasks and speed up legal research with AI-based tools. Learn how Copilot can streamline, structure, and effectively manage extensive information and case data.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "11:00 - 12:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=914993987",
+        "Areas_Conocimiento": [
+            "Datos y Analítica Empresarial",
+            "Educación y Especialización Profesional"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Optimización Operativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for IT",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for IT to explore using Copilot as your own AI assistant - discover how Copilot helps boost collaboration, provides insights and streamlines workflows.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "12:00 - 13:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2319729849",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Becoming AI Ready in Education K-12 Series | Security, Data Governance, and Privacy for...",
+        "Descripcion": "Becoming AI Ready in Education Series | Getting AI-Ready: Security, Data Governance, and Privacy for K–12",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "12:00 - 13:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3343231908",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Seguridad y Protección de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Tech Brief: Protect Cloud, AI Platform & Apps with Microsoft Defender for Cloud",
+        "Descripcion": "Join us in the Tech Brief: Protect Cloud, AI Platform & Apps with Microsoft Defender for Cloud.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "12:00 - 13:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=555770945",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Seguridad y Protección de Datos",
+            "Ciberseguridad y Protección de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Get Started with Microsoft 365 Copilot",
+        "Descripcion": "Discover how Microsoft 365 Copilot helps boost productivity. Learn how AI-powered solutions streamline workflows and reduce time spent on routine tasks by creating smart prompting strategies.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "13:00 - 14:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3738344417",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Inteligencia Artificial y Automatización"
+        ],
+        "Subareas_Conocimiento": [
+            "IA Generativa y Copilotos",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Becoming AI Ready in Education Series | Security, Data Governance, and Privacy for Higher...",
+        "Descripcion": "Becoming AI Ready in Education Series | Security, Data Governance, and Privacy for Higher Education",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "14:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1354277070",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Seguridad y Protección de Datos",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for HR",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for HR to explore using Copilot as an AI assistant. Learn how to streamline recruiting steps, improve onboarding, and increase employee satisfaction.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "14:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1003518972",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - 365 Mechanix - Australia",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05 / 2026-08-06",
+        "Hora": "18:00 GMT-5 / 02:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2260514307",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Inteligencia Artificial y Copilot"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Real-Time Intelligence in a Day - Tridant - Australia",
+        "Descripcion": "Discover how Real-Time Intelligence can revolutionize your data, transforming it into a dynamic and actionable resource that drives value throughout your entire organization.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05 / 2026-08-06",
+        "Hora": "18:00 GMT-5 / 02:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2824576922",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Datos y Analítica Empresarial",
+            "Análisis de Datos e Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for HR",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for HR to explore using Copilot as an AI assistant. Learn how to streamline recruiting steps, improve onboarding, and increase employee satisfaction.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05",
+        "Hora": "22:30 - 23:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=482437732",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - Quadrant Technologies - India",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05 / 2026-08-06",
+        "Hora": "22:30 GMT-5 / 06:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3826001998",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Copilot Adoption Deployment Factory - EPISODE 1 IGNITE",
+        "Descripcion": "Join this 8-week Train-the-Trainer program to learn how to build and deliver Microsoft Copilot adoption services using ready-to-use content, adoption resources, and PSA guidance",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-05 / 2026-08-06",
+        "Hora": "23:00 GMT-5 / 00:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4151658037",
+        "Areas_Conocimiento": [
+            "Estrategia Corporativa y Productividad",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Adopción Tecnológica",
+            "Adopción y Capacitación IA"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Finance",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for Finance to explore fundamentals of using Copilot as your Al assistant to summarize data for financial insights, optimizes processes and saves time.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "00:00 - 01:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1749303414",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Operations",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for Operations to explore using Copilot as an AI assistant. See how Copilot helps enhance business operations and innovates with in-depth analysis.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "01:00 - 02:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4167426914",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Legal",
+        "Descripcion": "Minimize time spent on repetitive tasks and speed up legal research with AI-based tools. Learn how Copilot can streamline, structure, and effectively manage extensive information and case data.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "02:00 - 03:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3535754815",
+        "Areas_Conocimiento": [
+            "Datos y Analítica Empresarial",
+            "Educación y Especialización Profesional"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Optimización Operativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Chat with Your Data in a Day - Thorogood Associates - United Kingdom",
+        "Descripcion": "Tailored for Power BI Data Analysts, this hands-on workshop teaches you to make models chat-ready, unlock insights with natural language, and optimize data for Copilot.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "03:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2180771834",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Ciencia de Datos y Analítica"
+        ],
+        "Subareas_Conocimiento": [
+            "Analítica de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Introduction to Microsoft Azure",
+        "Descripcion": "Learn the basics of cloud computing and how to use the components and resources available in Microsoft Azure to build and deploy your own cloud solutions.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "03:00 - 07:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2465320609",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Nube y Computación",
+            "Arquitectura Cloud y Plataformas"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "App in a Day - Davyn Limited - Trinidad and Tobago",
+        "Descripcion": "Digitize processes, build apps, and automate workflows—all without code using Power Apps.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3717032193",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo y Automatización",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - Pragmatic Works - United States",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=193766529",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Intellify Solutions LLC - United States",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=664258940",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Frontier Accelerate for Security: EA Advisory - August 2026",
+        "Descripcion": "Join us to explore FY27 EASA partner investments, including key updates, eligibility requirements, important timelines, and available resources and support. The session will conclude with a live",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "10:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1097071136",
+        "Areas_Conocimiento": [
+            "Ciberseguridad",
+            "Infraestructura y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Seguridad Digital",
+            "Estrategia Corporativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Security Immersion Event: Into the Breach",
+        "Descripcion": "Test your cybersecurity skills at the Microsoft Security Immersion Event: Into the Breach.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "10:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3335618655",
+        "Areas_Conocimiento": [
+            "Ciberseguridad"
+        ],
+        "Subareas_Conocimiento": [
+            "Seguridad Digital"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Develop generative AI apps with Azure AI Foundry",
+        "Descripcion": "Discover how to use Azure AI Foundry to build a customized agent that uses language models for intelligent conversations.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06 / 2026-08-07",
+        "Hora": "11:00 GMT-5 / 12:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1758004310",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de IA Generativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Mastering GitHub Copilot Across the Software Development Life Cycle (SDLC)",
+        "Descripcion": "This hands-on lab is designed to give developers practical experience using GitHub Copilot as an AI-powered assistant throughout the Software Development Life Cycle (SDLC).",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "11:00 - 15:10 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4180133500",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Software y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Modernize with confidence: Accelerate your cloud and AI journey with Azure",
+        "Descripcion": "In this expert-led session, you’ll explore how to move beyond legacy systems and embrace a modern cloud strategy powered by Azure.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "11:00 - 11:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1947006392",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Cloud Computing y Estrategia Tecnológica",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Transform your Everyday Business Processes with Agents",
+        "Descripcion": "Explore real-world use cases for AI agents to increase productivity by automating workflows, providing contextual support, and guiding people through complex tasks.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06",
+        "Hora": "11:00 - 14:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1334618928",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Agentes Inteligentes",
+            "Desarrollo de Soluciones"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Chat with Your Data in a Day - Cloudalytix Tech Solutions LLP - India",
+        "Descripcion": "Tailored for Power BI Data Analysts, this hands-on workshop teaches you to make models chat-ready, unlock insights with natural language, and optimize data for Copilot.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-06 / 2026-08-07",
+        "Hora": "22:30 GMT-5 / 06:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3008329645",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Ciencia de Datos y Analítica"
+        ],
+        "Subareas_Conocimiento": [
+            "Analítica de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - iLink Digital - United Kingdom",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-07",
+        "Hora": "03:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2260577047",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Real-Time Intelligence in a Day - Kanerika Inc - United States",
+        "Descripcion": "Discover how Real-Time Intelligence can revolutionize your data, transforming it into a dynamic and actionable resource that drives value throughout your entire organization.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-07",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2936253452",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Datos y Analítica Empresarial",
+            "Análisis de Datos e Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Power Pages in a Day - Pragmatic Works - United States",
+        "Descripcion": "Learn to create secure, scalable websites with Power Pages using low-code tools and Dataverse.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-07",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4183949964",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Aplicaciones y Low-Code",
+            "Plataformas Low-Code y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - Pragmatic Works - United States",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-07",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2075864360",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Pragmatic Works - United States",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-07",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1088293775",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - MAQ Software - United States",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-07",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3509820602",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Real-Time Intelligence in a Day - MAQ Software - United States",
+        "Descripcion": "Discover how Real-Time Intelligence can revolutionize your data, transforming it into a dynamic and actionable resource that drives value throughout your entire organization.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-07",
+        "Hora": "10:00 - 18:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1356525571",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Datos y Analítica Empresarial",
+            "Análisis de Datos e Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Transform your Everyday Business Processes with Agents",
+        "Descripcion": "Explore real-world use cases for AI agents to increase productivity by automating workflows, providing contextual support, and guiding people through complex tasks.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-09 / 2026-08-10",
+        "Hora": "22:30 GMT-5 / 01:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2892001990",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Agentes Inteligentes",
+            "Desarrollo de Soluciones"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Protect Sensitive Information in the AI Era with...",
+        "Descripcion": "Learn how to help safeguard, govern, and manage your organization’s sensitive data in the AI era using a single unified platform.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-09 / 2026-08-11",
+        "Hora": "22:30 GMT-5 / 00:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3889960838",
+        "Areas_Conocimiento": [
+            "Estrategia Corporativa y Productividad",
+            "Tecnología e Informática"
+        ],
+        "Subareas_Conocimiento": [
+            "Ciberseguridad y Protección de Datos",
+            "Adopción Tecnológica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Introduction to Microsoft Security",
+        "Descripcion": "Explore how to manage and protect privacy, network access, and organizational data using Microsoft Security solutions.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-10 / 2026-08-11",
+        "Hora": "03:00 GMT-5 / 05:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3562280102",
+        "Areas_Conocimiento": [
+            "Productividad y Estrategia Empresarial",
+            "Tecnología e Informática"
+        ],
+        "Subareas_Conocimiento": [
+            "Ciberseguridad y Protección de Datos",
+            "Seguridad y Gobernanza de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Chat with Your Data in a Day - MAQ Software - United States",
+        "Descripcion": "Tailored for Power BI Data Analysts, this hands-on workshop teaches you to make models chat-ready, unlock insights with natural language, and optimize data for Copilot.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-10",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3746808614",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Ciencia de Datos y Analítica"
+        ],
+        "Subareas_Conocimiento": [
+            "Analítica de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Real-Time Intelligence in a Day - Pragmatic Works - United States",
+        "Descripcion": "Discover how Real-Time Intelligence can revolutionize your data, transforming it into a dynamic and actionable resource that drives value throughout your entire organization.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-10",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1687366950",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Datos y Analítica Empresarial",
+            "Análisis de Datos e Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Introduction to Microsoft 365, Copilot, and Agents",
+        "Descripcion": "Learn how Microsoft 365, Copilot, and AI agents work together to boost productivity across your organization by providing relevant insights and delivering seamless app experiences.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-10",
+        "Hora": "11:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2093528805",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "In person",
+        "Nombre de evento": "Cloud and AI Innovation Day - Perth",
+        "Descripcion": "The Microsoft Cloud & AI Innovation Summit returns to Perth! Join us for this in-person experience designed for leaders and decision makers who are ready to turn AI experimentation into real bus",
+        "Lugar": "Perth, Western Australia, Australia",
+        "Fecha": "2026-08-10 / 2026-08-11",
+        "Hora": "19:00 GMT-5 / 04:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3126401700",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Cloud Computing y Estrategia Tecnológica",
+            "Infraestructura Cloud y Plataformas"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training: Explore Microsoft 365 Copilot Chat",
+        "Descripcion": "Learn how to improve efficiency and foster collaboration by automating communication tasks across your organization using Microsoft 365 Copilot Chat and AI agents.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-10",
+        "Hora": "22:30 - 23:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=366702025",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "In person",
+        "Nombre de evento": "Critical Infrastructure and OT Leaders Lunch: From Operational Signals to Operational...",
+        "Descripcion": "Critical Infrastructure and OT Leaders Lunch: From Operational Signals to Operational Intelligence | Tuesday, August 11, 2026, 12:15 – 1:45 PM (GMT+08:00)",
+        "Lugar": "Perth, Western Australia, Australia",
+        "Fecha": "2026-08-10 / 2026-08-11",
+        "Hora": "23:15 GMT-5 / 00:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1229316590",
+        "Areas_Conocimiento": [
+            "Infraestructura y Negocios",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Cloud Computing",
+            "Infraestructura Crítica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training: Get Started with Microsoft 365 Copilot and Agents",
+        "Descripcion": "Learn how to build, use, and share AI agents using Microsoft 365 Copilot Chat and Microsoft SharePoint to help automate business tasks, increase team collaboration, and improve productivity.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-10 / 2026-08-11",
+        "Hora": "23:30 GMT-5 / 00:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2831914059",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Agentes Inteligentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Real-Time Intelligence in a Day - Ingentive Limited - United Kingdom",
+        "Descripcion": "Discover how Real-Time Intelligence can revolutionize your data, transforming it into a dynamic and actionable resource that drives value throughout your entire organization.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11",
+        "Hora": "03:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=853834258",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Datos y Analítica Empresarial",
+            "Análisis de Datos e Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Introduction to Microsoft 365, Copilot, and Agents",
+        "Descripcion": "Learn how Microsoft 365, Copilot, and AI agents work together to boost productivity across your organization by providing relevant insights and delivering seamless app experiences.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11",
+        "Hora": "03:00 - 07:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4127518280",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "App in a Day - EPMPOINT - United States",
+        "Descripcion": "Digitize processes, build apps, and automate workflows—all without code using Power Apps.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3640691528",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Kanerika Inc - United States",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3232548381",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Migrate and Modernize Foundation",
+        "Descripcion": "Learn how to migrate and modernize your organization’s infrastructure, databases, and apps for increased performance and efficiency using Azure.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11",
+        "Hora": "11:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1473698983",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - UB Technology Innovations, Inc. - United States",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11",
+        "Hora": "11:00 - 19:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3506783039",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Frontier Transformation Week",
+        "Descripcion": "Where AI strategy meets real-world execution. Frontier Transformation Week is your bridge from AI vision to strategy, demos, and deployable know-how across four days.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11 / 2026-08-14",
+        "Hora": "11:00 GMT-5 / 14:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=905075289",
+        "Areas_Conocimiento": [
+            "Estrategia y Negocios Digitales",
+            "Infraestructura y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Transformación Digital",
+            "Estrategia Corporativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training: Explore Microsoft 365 Copilot Chat",
+        "Descripcion": "Learn how to improve efficiency and foster collaboration by automating communication tasks across your organization using Microsoft 365 Copilot Chat and AI agents.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11",
+        "Hora": "11:00 - 12:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3646015173",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training: Get Started with Microsoft 365 Copilot and Agents",
+        "Descripcion": "Learn how to build, use, and share AI agents using Microsoft 365 Copilot Chat and Microsoft SharePoint to help automate business tasks, increase team collaboration, and improve productivity.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11",
+        "Hora": "12:00 - 13:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3566947770",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Agentes Inteligentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "In person",
+        "Nombre de evento": "Copilot + Agents Discovery Day - Adelaide",
+        "Descripcion": "AI is creating a new standard for how work gets done. Organisations that move beyond exploration and into practical adoption are the ones seeing real productivity gains.",
+        "Lugar": "Adelaide, South Australia, Australia",
+        "Fecha": "2026-08-11",
+        "Hora": "18:00 - 23:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=349926582",
+        "Areas_Conocimiento": [
+            "Estrategia de Negocios y Transformación Digital",
+            "Inteligencia Artificial y Automatización"
+        ],
+        "Subareas_Conocimiento": [
+            "Agentes Inteligentes",
+            "Optimización Organizacional"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Discovery Session: Rethinking Business Processes for the AI Era",
+        "Descripcion": "See Microsoft solutions in action through expert-led demos and customer scenarios. In just one hour, gain practical insights and next steps to accelerate innovation.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11",
+        "Hora": "20:00 - 21:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4138736504",
+        "Areas_Conocimiento": [
+            "Estrategia de Negocios y Transformación Digital"
+        ],
+        "Subareas_Conocimiento": [
+            "Optimización Organizacional"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Develop generative AI apps with Azure AI Foundry",
+        "Descripcion": "Discover how to use Azure AI Foundry to build a customized agent that uses language models for intelligent conversations.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-11 / 2026-08-13",
+        "Hora": "22:30 GMT-5 / 00:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2140408092",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de IA Generativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - IOP Technologies - United Arab Emirates",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "00:00 - 08:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=981697046",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Discovery Session: Rethinking Business Processes for the AI Era",
+        "Descripcion": "See Microsoft solutions in action through expert-led demos and customer scenarios. In just one hour, gain practical insights and next steps to accelerate innovation.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "00:00 - 01:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3309566471",
+        "Areas_Conocimiento": [
+            "Estrategia de Negocios y Transformación Digital"
+        ],
+        "Subareas_Conocimiento": [
+            "Optimización Organizacional"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "In person",
+        "Nombre de evento": "Microsoft Data and AI Leaders Forum",
+        "Descripcion": "Join senior Data & AI leaders for an exclusive Microsoft Forum on building trusted data foundations, modernizing data estates, and accelerating AI transformation at scale.",
+        "Lugar": "Centurion, Gauteng, South Africa",
+        "Fecha": "2026-08-12",
+        "Hora": "02:00 - 09:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3809377932",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Arquitectura de Datos y Analítica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Develop generative AI apps with Azure AI Foundry",
+        "Descripcion": "Discover how to use Azure AI Foundry to build a customized agent that uses language models for intelligent conversations.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12 / 2026-08-13",
+        "Hora": "03:00 GMT-5 / 04:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=840438893",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de IA Generativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Secure and administer Microsoft 365 Copilot and Agents",
+        "Descripcion": "Learn how to help protect and manage AI agents using Copilot Control System to grant permissions and understand the tools to use when creating agents to govern data and minimize loss.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "03:00 - 06:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=590867022",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Discovery Session: Rethinking Business Processes for the AI Era",
+        "Descripcion": "See Microsoft solutions in action through expert-led demos and customer scenarios. In just one hour, gain practical insights and next steps to accelerate innovation.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "05:00 - 06:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2667225573",
+        "Areas_Conocimiento": [
+            "Estrategia de Negocios y Transformación Digital"
+        ],
+        "Subareas_Conocimiento": [
+            "Optimización Organizacional"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "In person",
+        "Nombre de evento": "Microsoft Agent Build-a-Thon",
+        "Descripcion": "AI innovation is moving beyond simple prompting—now it’s time to build agents that take action. Join us for a Microsoft Agent Build-a-thon, an interactive, in-person workshop where you’ll gain p",
+        "Lugar": "Atlanta, Georgia, United States",
+        "Fecha": "2026-08-12",
+        "Hora": "07:30 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4037803374",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización"
+        ],
+        "Subareas_Conocimiento": [
+            "Agentes Inteligentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - Avasoft - United States",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2969239614",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "App in a Day - Wai Technologies - United States",
+        "Descripcion": "Digitize processes, build apps, and automate workflows—all without code using Power Apps.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1866958254",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - LevelShift - United States",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1652533184",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Introduction to Microsoft Power Platform",
+        "Descripcion": "Explore how to streamline operations, automate workflows, and build secure low-code solutions that enhance productivity and innovation with Microsoft Power Platform.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12 / 2026-08-13",
+        "Hora": "11:00 GMT-5 / 14:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1547168287",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo Low-Code",
+            "Plataformas Low-Code y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Royal Cyber - United States",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "11:00 - 19:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=75257023",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Becoming AI Ready in Education K-12 Series | Meet Microsoft 365 Copilot: What's Included...",
+        "Descripcion": "Becoming AI Ready in Education Series | Meet Microsoft 365 Copilot: What's Included and How to Get Started",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "12:00 - 13:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=665308494",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Becoming AI Ready in Education Series | Meet Microsoft 365 Copilot: What's Included and...",
+        "Descripcion": "Becoming AI Ready in Education Series | Meet Microsoft 365 Copilot: What's Included and How to Get Started",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "14:00 - 15:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1920108379",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Educación y Transformación Digital"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Infraestructura Educativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Chat with Your Data in a Day - Agile Insights - Australia",
+        "Descripcion": "Tailored for Power BI Data Analysts, this hands-on workshop teaches you to make models chat-ready, unlock insights with natural language, and optimize data for Copilot.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12 / 2026-08-13",
+        "Hora": "18:00 GMT-5 / 02:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2616647289",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Ciencia de Datos y Analítica"
+        ],
+        "Subareas_Conocimiento": [
+            "Analítica de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - Prometix - Australia",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12 / 2026-08-13",
+        "Hora": "18:00 GMT-5 / 02:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3753578622",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Protecting What Matters: Data Security and Governance for Modern Education",
+        "Descripcion": "Join this expert-led webinar to learn how Microsoft Purview helps education organisations strengthen data security and governance for AI adoption.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "20:00 - 21:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3219396980",
+        "Areas_Conocimiento": [
+            "Productividad y Estrategia Empresarial",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Seguridad y Gobernanza de Datos",
+            "Seguridad y Protección de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Marketing",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for Marketing to explore using Copilot as your own AI assistant - discover how Copilot helps create, coordinate, and deliver marketing content faster.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12",
+        "Hora": "22:30 - 23:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3485349492",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Copilot Adoption Deployment Factory - EPISODE 2 ENVISION",
+        "Descripcion": "Join this 8-week Train-the-Trainer program to learn how to build and deliver Microsoft Copilot adoption services using ready-to-use content, adoption resources, and PSA guidance",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12 / 2026-08-13",
+        "Hora": "23:00 GMT-5 / 00:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2864888993",
+        "Areas_Conocimiento": [
+            "Estrategia Corporativa y Productividad",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Adopción Tecnológica",
+            "Adopción y Capacitación IA"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for IT",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for IT to explore using Copilot as your own AI assistant - discover how Copilot helps boost collaboration, provides insights and streamlines workflows.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-12 / 2026-08-13",
+        "Hora": "23:30 GMT-5 / 00:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3451944923",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training for Sales",
+        "Descripcion": "Join a free Microsoft 365 Copilot Training for Sales to explore using Copilot as your own AI assistant. Through expert-led demos, discover how Copilot helps you generate leads and drive sales.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-13",
+        "Hora": "01:00 - 02:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2731700542",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Get Started with Microsoft 365 Copilot",
+        "Descripcion": "Discover how Microsoft 365 Copilot helps boost productivity. Learn how AI-powered solutions streamline workflows and reduce time spent on routine tasks by creating smart prompting strategies.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-13",
+        "Hora": "02:00 - 03:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2574827381",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Inteligencia Artificial y Automatización"
+        ],
+        "Subareas_Conocimiento": [
+            "IA Generativa y Copilotos",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - Trustmarque - United Kingdom",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-13",
+        "Hora": "03:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=555079466",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "SQL AI App in a Day - Synapx Ltd - United Kingdom",
+        "Descripcion": "Tailored for SQL developers and DBAs, this hands-on workshop teaches how to build secure AI-powered apps using T‑SQL and trusted SQL data.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-13",
+        "Hora": "03:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1154930565",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones AI",
+            "Bases de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Baker Tilly Advisory Group - United States",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-13",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2856276526",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "In person",
+        "Nombre de evento": "MongoDB .local- San Francisco",
+        "Descripcion": "MongoDB .local- San Francisco",
+        "Lugar": "San Francisco, California, United States",
+        "Fecha": "2026-08-13",
+        "Hora": "10:00 - 19:00 GMT-5",
+        "url": "https://www.mongodb.com/events/mongodb-local/san-francisco?msockid=0774043e7fa56d7215ca13527e716c9b",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Bases de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - MAQ Software - United States",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-13",
+        "Hora": "10:00 - 18:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2111421045",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Predict and Defend Against Cybersecurity Threats",
+        "Descripcion": "Learn how to strengthen your cybersecurity posture by investigating threats, streamlining response, and disrupting attacks in real time using the Microsoft unified security operations platform.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-13 / 2026-08-14",
+        "Hora": "11:00 GMT-5 / 13:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1250655938",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática"
+        ],
+        "Subareas_Conocimiento": [
+            "Ciberseguridad y Protección de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Chat with Your Data in a Day - DT SOFTWARE SERVICES - United States",
+        "Descripcion": "Tailored for Power BI Data Analysts, this hands-on workshop teaches you to make models chat-ready, unlock insights with natural language, and optimize data for Copilot.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-13",
+        "Hora": "11:00 - 19:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3066967622",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Ciencia de Datos y Analítica"
+        ],
+        "Subareas_Conocimiento": [
+            "Analítica de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Secure and administer Microsoft 365 Copilot and Agents",
+        "Descripcion": "Learn how to help protect and manage AI agents using Copilot Control System to grant permissions and understand the tools to use when creating agents to govern data and minimize loss.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-13 / 2026-08-14",
+        "Hora": "22:30 GMT-5 / 02:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1269782894",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Power Pages in a Day - MAQ Software - Sweden",
+        "Descripcion": "Learn to create secure, scalable websites with Power Pages using low-code tools and Dataverse.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-14",
+        "Hora": "02:00 - 10:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1011665972",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Aplicaciones y Low-Code",
+            "Plataformas Low-Code y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - SBID s.r.o. - Czechia",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-14",
+        "Hora": "02:00 - 10:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4185021863",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - MAQ Software - United Kingdom",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-14",
+        "Hora": "03:00 - 11:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=510697911",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - Pragmatic Works - United States",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-14",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3918764631",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - Pragmatic Works - United States",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-14",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4077581447",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Power Pages in a Day - Pragmatic Works - United States",
+        "Descripcion": "Learn to create secure, scalable websites with Power Pages using low-code tools and Dataverse.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-14",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=641762398",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Aplicaciones y Low-Code",
+            "Plataformas Low-Code y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - Pragmatic Works - United States",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-14",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3941933015",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Tridant - Australia",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-16 / 2026-08-17",
+        "Hora": "18:00 GMT-5 / 02:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3683377065",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Create Agents in Microsoft Copilot Studio",
+        "Descripcion": "Learn to build and deploy custom AI agents in Microsoft Copilot Studio to automate workflows, enhance user experiences, and streamline processes across your organization.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-16 / 2026-08-18",
+        "Hora": "22:30 GMT-5 / 01:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1587490939",
+        "Areas_Conocimiento": [
+            "Productividad y Estrategia Empresarial",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Automatización de Flujos de Trabajo",
+            "Desarrollo de Soluciones"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Introduction to Microsoft Azure Data",
+        "Descripcion": "Learn about the core concepts that support the latest data solutions, such as common formats, workloads, and essential roles, and how to manage diverse data types using Azure.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-16 / 2026-08-18",
+        "Hora": "22:30 GMT-5 / 00:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3377587958",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Arquitectura de Datos y Analítica",
+            "Nube y Computación"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Build agentic AI solutions with Azure AI Foundry",
+        "Descripcion": "Advance your AI agent development skills using Azure AI Foundry Agent Service and the Semantic Kernel Agent Framework.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-17",
+        "Hora": "03:00 - 06:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1105421652",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones AI",
+            "Inteligencia Artificial Generativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Create Agents in Microsoft Copilot Studio",
+        "Descripcion": "Learn to build and deploy custom AI agents in Microsoft Copilot Studio to automate workflows, enhance user experiences, and streamline processes across your organization.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-17 / 2026-08-18",
+        "Hora": "11:00 GMT-5 / 13:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3279077102",
+        "Areas_Conocimiento": [
+            "Productividad y Estrategia Empresarial",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Automatización de Flujos de Trabajo",
+            "Desarrollo de Soluciones"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Chat with Your Data in a Day - Koenig Solutions - New Zealand",
+        "Descripcion": "Tailored for Power BI Data Analysts, this hands-on workshop teaches you to make models chat-ready, unlock insights with natural language, and optimize data for Copilot.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-17 / 2026-08-18",
+        "Hora": "16:00 GMT-5 / 00:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4103727471",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Ciencia de Datos y Analítica"
+        ],
+        "Subareas_Conocimiento": [
+            "Analítica de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Frontier Transformation Week",
+        "Descripcion": "Where AI strategy meets real-world execution. Frontier Transformation Week is your bridge from AI vision to strategy, demos, and deployable know-how across four days.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-17 / 2026-08-20",
+        "Hora": "20:00 GMT-5 / 23:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3577624602",
+        "Areas_Conocimiento": [
+            "Estrategia y Negocios Digitales",
+            "Infraestructura y Negocios"
+        ],
+        "Subareas_Conocimiento": [
+            "Transformación Digital",
+            "Estrategia Corporativa"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - MAQ Software - Sweden",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "02:00 - 10:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2314462623",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "In person",
+        "Nombre de evento": "Microsoft Data and AI Leaders Forum Cape Town",
+        "Descripcion": "Join senior Data & AI leaders for an exclusive Microsoft roundtable on building trusted data foundations, modernizing data estates, and accelerating AI transformation at scale.",
+        "Lugar": "Cape Town, Western Cape, South Africa",
+        "Fecha": "2026-08-18",
+        "Hora": "02:00 - 09:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=217746489",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Arquitectura de Datos y Analítica"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Agent in a Day - iLink Digital - South Africa",
+        "Descripcion": "Build low-code AI agents with Microsoft Copilot Studio",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "02:00 - 10:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3543635038",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Soluciones",
+            "Desarrollo Low-Code"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Get Started with Microsoft 365 Copilot",
+        "Descripcion": "Discover how Microsoft 365 Copilot helps boost productivity. Learn how AI-powered solutions streamline workflows and reduce time spent on routine tasks by creating smart prompting strategies.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "03:00 - 04:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4160180769",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Inteligencia Artificial y Automatización"
+        ],
+        "Subareas_Conocimiento": [
+            "IA Generativa y Copilotos",
+            "Formación en Sectores Específicos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "GitHub Copilot Hands-on Lab",
+        "Descripcion": "GitHub Copilot Hands-on Lab",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "03:00 - 07:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2478492167",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "IA Generativa y Copilotos",
+            "Inteligencia Artificial y Copilot"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training: Get Started with Microsoft 365 Copilot and Agents",
+        "Descripcion": "Learn how to build, use, and share AI agents using Microsoft 365 Copilot Chat and Microsoft SharePoint to help automate business tasks, increase team collaboration, and improve productivity.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "04:00 - 05:15 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3387795475",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Agentes",
+            "Agentes Inteligentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Discovery Session: Build Agents and Software Faster with AI That Knows Your...",
+        "Descripcion": "See Microsoft solutions in action through expert-led demos and customer scenarios. In just one hour, gain practical insights and next steps to accelerate innovation.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "05:00 - 06:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2724174435",
+        "Areas_Conocimiento": [
+            "Estrategia de Negocios y Transformación Digital",
+            "Inteligencia Artificial y Automatización"
+        ],
+        "Subareas_Conocimiento": [
+            "Optimización Organizacional",
+            "Agentes Inteligentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft 365 Copilot Training: Explore Microsoft 365 Copilot Chat",
+        "Descripcion": "Learn how to improve efficiency and foster collaboration by automating communication tasks across your organization using Microsoft 365 Copilot Chat and AI agents.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "05:30 - 06:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1980970910",
+        "Areas_Conocimiento": [
+            "Educación y Especialización Profesional",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Formación en Sectores Específicos",
+            "Inteligencia Artificial y Agentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Chat with Your Data in a Day - Softcrylic - United States",
+        "Descripcion": "Tailored for Power BI Data Analysts, this hands-on workshop teaches you to make models chat-ready, unlock insights with natural language, and optimize data for Copilot.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "08:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=577023219",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Ciencia de Datos y Analítica"
+        ],
+        "Subareas_Conocimiento": [
+            "Analítica de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - Quadrant Technologies - United States",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2559789166",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Fabric Analyst in a Day - OnPoint Insights LLC - Canada",
+        "Descripcion": "Tailored for experienced Power BI Data Analysts new to Microsoft Fabric, this hands-on training will teach you the essentials of data consolidation and uncovering valuable insights.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "09:00 - 17:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3021125786",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Análisis y Ciencia de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Technical Workshop: Develop an ASP.NET Core Web App that Consumes and API",
+        "Descripcion": "This is an advanced to expert-level course. Attendees should be able to demonstrate expertise and a differentiated perspective on the technology from extensive and diverse practical experience.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "10:00 - 16:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1707768133",
+        "Areas_Conocimiento": [
+            "Desarrollo de Software"
+        ],
+        "Subareas_Conocimiento": [
+            "Arquitectura de Aplicaciones"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Chat with Your Data in a Day - Ryse Technologies - United States",
+        "Descripcion": "Tailored for Power BI Data Analysts, this hands-on workshop teaches you to make models chat-ready, unlock insights with natural language, and optimize data for Copilot.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "10:00 - 18:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=2533579645",
+        "Areas_Conocimiento": [
+            "Análisis de Datos y Business Intelligence",
+            "Ciencia de Datos y Analítica"
+        ],
+        "Subareas_Conocimiento": [
+            "Analítica de Datos",
+            "Inteligencia de Negocios"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Power Pages in a Day - Upzoids - United States",
+        "Descripcion": "Learn to create secure, scalable websites with Power Pages using low-code tools and Dataverse.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "10:00 - 18:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1952343233",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo de Aplicaciones y Low-Code",
+            "Plataformas Low-Code y Automatización"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Introduction to Microsoft Security",
+        "Descripcion": "Explore how to manage and protect privacy, network access, and organizational data using Microsoft Security solutions.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18 / 2026-08-19",
+        "Hora": "11:00 GMT-5 / 13:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1589298831",
+        "Areas_Conocimiento": [
+            "Productividad y Estrategia Empresarial",
+            "Tecnología e Informática"
+        ],
+        "Subareas_Conocimiento": [
+            "Ciberseguridad y Protección de Datos",
+            "Seguridad y Gobernanza de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Discovery Hour: Delivering AI-Powered Customer Experiences",
+        "Descripcion": "Join us for a free Microsoft Discovery Hour to explore how Microsoft Dynamics 365 and Microsoft 365 Copilot empower organizations to deliver exceptional customer experiences using agentic AI.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "11:00 - 12:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4111551088",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Automatización",
+            "Tecnología e Informática"
+        ],
+        "Subareas_Conocimiento": [
+            "Inteligencia Artificial y Analítica",
+            "IA Generativa y Copilotos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Tech Brief: Secure your data with Microsoft Purview",
+        "Descripcion": "Join us for Secure your data with Microsoft Purview",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "12:00 - 13:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1345990773",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Ciberseguridad y Gobernanza",
+            "Ciberseguridad y Protección de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Discovery Sessions: Build Agents and Software Faster with AI That Knows Your...",
+        "Descripcion": "See Microsoft solutions in action through expert-led demos and customer scenarios. In just one hour, gain practical insights and next steps to accelerate innovation.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18",
+        "Hora": "12:00 - 13:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1488490015",
+        "Areas_Conocimiento": [
+            "Estrategia de Negocios y Transformación Digital",
+            "Inteligencia Artificial y Automatización"
+        ],
+        "Subareas_Conocimiento": [
+            "Optimización Organizacional",
+            "Agentes Inteligentes"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Security Virtual Training Day: Strengthen Cloud Security with Microsoft...",
+        "Descripcion": "Learn how to apply strong, unified security measures across your cloud apps. And how to deploy a cloud-native application protection platform (CNAPP) strategy using Microsoft Defender for Cloud.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18 / 2026-08-20",
+        "Hora": "22:30 GMT-5 / 01:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=3862325803",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Ciberseguridad y Protección de Datos",
+            "Seguridad y Protección de Datos"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Introduction to Microsoft Azure",
+        "Descripcion": "Learn the basics of cloud computing and how to use the components and resources available in Microsoft Azure to build and deploy your own cloud solutions.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18 / 2026-08-19",
+        "Hora": "22:30 GMT-5 / 02:45 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=905799873",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Nube y Computación",
+            "Arquitectura Cloud y Plataformas"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Dashboard in a Day - Cloudalytix Tech Solutions LLP - India",
+        "Descripcion": "Create a dashboard in just one day and learn the art of analyzing your data in a rich and compelling manner.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-18 / 2026-08-19",
+        "Hora": "22:30 GMT-5 / 06:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=1109584324",
+        "Areas_Conocimiento": [
+            "Inteligencia Artificial y Desarrollo Tecnológico",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Datos",
+            "Infraestructura y Cloud Computing"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Azure Arc enabled SQL Server Deep Dive Session",
+        "Descripcion": "Azure Arc-enabled SQL Server Session",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-19",
+        "Hora": "00:00 - 01:00 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=123511897",
+        "Areas_Conocimiento": [
+            "Tecnología e Informática",
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Infraestructura y Computación en la Nube",
+            "Desarrollo de Software y Aplicaciones"
+        ]
+    },
+    {
+        "Fuente": "Microsoft Events (es-co)",
+        "Etiqueta": "Digital",
+        "Nombre de evento": "Microsoft Virtual Training Day: Introduction to Microsoft Power Platform",
+        "Descripcion": "Explore how to streamline operations, automate workflows, and build secure low-code solutions that enhance productivity and innovation with Microsoft Power Platform.",
+        "Lugar": "Digital",
+        "Fecha": "2026-08-19 / 2026-08-20",
+        "Hora": "03:00 GMT-5 / 06:30 GMT-5",
+        "url": "https://msevents.microsoft.com/event?id=4096674336",
+        "Areas_Conocimiento": [
+            "Tecnología e Inteligencia Artificial"
+        ],
+        "Subareas_Conocimiento": [
+            "Desarrollo Low-Code",
+            "Plataformas Low-Code y Automatización"
+        ]
+    }
+]

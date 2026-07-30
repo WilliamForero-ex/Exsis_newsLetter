@@ -1,204 +1,196 @@
 import json
 import logging
-from playwright.sync_api import sync_playwright
+import asyncio
+from playwright.async_api import async_playwright
 
+# Configuración del logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)-8s | %(message)s",
     datefmt="%H:%M:%S",
 )
-log = logging.getLogger("microsoft_events_json")
+log = logging.getLogger("microsoft_dynamic_content_scraper")
 
-URL_BASE = "https://www.microsoft.com/en-us/events/search-catalog/"
-FILTROS = "audience:developers,primary-language:english"
+URL_INICIAL = "https://www.microsoft.com/en-us/events/search-catalog/"
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
 
-LIMITE_EVENTOS = 50
-SELECTOR_LINKS = 'a[href*="msevents.microsoft.com/event"]'
+META_EVENTOS = 200
+LIMITE_MAX_PAGINAS = 50
 
-def construir_url_catalogo(numero_pagina: int) -> str:
-    return f"{URL_BASE}?filters={FILTROS}&scenario=events&page={numero_pagina}"
+async def bloquear_recursos(route):
+    """Bloquea imágenes y recursos pesados para acelerar la carga del JS."""
+    if route.request.resource_type in ["image", "media", "font"]:
+        await route.abort()
+    else:
+        await route.continue_()
 
-def cerrar_banner_cookies(pagina):
-    for selector in ["#onetrust-accept-btn-handler", "button:has-text('Accept all')", "button:has-text('Accept')"]:
-        try:
-            boton = pagina.locator(selector).first
-            if boton.is_visible(timeout=1500):
-                boton.click()
-                log.info("Banner de cookies cerrado.")
-                pagina.wait_for_timeout(1000)
-                return
-        except Exception:
-            continue
+async def extraer_eventos_desde_dynamic_content(pagina) -> list:
+    """
+    Ejecuta JavaScript directamente dentro de .dynamic-content__content
+    para extraer las tarjetas de la página actual.
+    """
+    return await pagina.evaluate("""
+        () => {
+            const contenedor = document.querySelector('.dynamic-content__content');
+            if (!contenedor) return [];
 
-def extraer_detalle_completo(pagina, url: str) -> dict:
-    """Extrae TODA la información de la página individual del evento en Microsoft Events."""
-    detalle = {
-        "url_evento": url,
-        "titulo": None,
-        "fecha_y_hora": None,
-        "ubicacion_o_formato": None,
-        "descripcion_completa": None,
-        "ponente_o_speaker": None,
-        "texto_crudo_html": None # El campo más importante para que lo procese el LLM después
-    }
-    try:
-        pagina.goto(url, wait_until="domcontentloaded", timeout=30000)
-        pagina.wait_for_timeout(3500) # Microsoft Events tarda un poco más en renderizar el React
-        
-        # 1. Título (Usualmente un h1)
-        try:
-            detalle["titulo"] = pagina.locator("h1").first.inner_text().strip()
-        except:
-            pass
+            const tarjetas = Array.from(contenedor.querySelectorAll('.card__content'));
             
-        # 2. Fecha y hora 
-        try:
-            time_elements = pagina.locator("div[class*='time'], div[class*='date'], time").all()
-            if time_elements:
-                detalle["fecha_y_hora"] = " | ".join([el.inner_text().strip() for el in time_elements[:2]])
-        except:
-            pass
+            return tarjetas.map(card => {
+                // 1. Etiqueta (Ej: Digital, In-Person)
+                const tagEl = card.querySelector('.tag .label');
+                const etiqueta = tagEl ? tagEl.innerText.trim() : null;
 
-        # 3. Descripción
-        try:
-            desc_el = pagina.locator("div[class*='description'], section[class*='description']").first
-            if desc_el.is_visible():
-                detalle["descripcion_completa"] = desc_el.inner_text().strip()
-        except:
-            pass
+                // 2. Nombre del Evento (Título h3/h4)
+                const titleEl = card.querySelector('.block-feature__title');
+                const titulo = titleEl ? titleEl.innerText.trim() : null;
 
-        # 4. Texto crudo: La clave de este script
-        try:
-            main_container = pagina.locator("main, #root, #mainContent").first
-            if main_container.is_visible():
-                 detalle["texto_crudo_html"] = main_container.inner_text().strip()
-            else:
-                 detalle["texto_crudo_html"] = pagina.locator("body").inner_text().strip()
-        except:
-             pass
+                // 3. Descripción (Párrafo)
+                const descEl = card.querySelector('.block-feature__paragraph');
+                const descripcion = descEl ? descEl.innerText.trim() : null;
 
-    except Exception as e:
-        log.warning(f"No se pudo procesar la URL {url}: {e}")
+                // 4. Ubicación / Lugar
+                const locEl = card.querySelector('.card__location');
+                const ubicacion = locEl ? locEl.innerText.trim() : null;
 
-    return detalle
+                // 5 y 6. Fechas y Horas (Soporta eventos de 1 o más días)
+                const bloquesFecha = Array.from(card.querySelectorAll('li.card__date'));
+                let fechas = [];
+                let horas = [];
 
+                bloquesFecha.forEach(bloque => {
+                    const fEl = bloque.querySelector('.block-feature__label');
+                    const hEl = bloque.querySelector('.block-feature__date');
+                    if (fEl && fEl.innerText.trim()) fechas.push(fEl.innerText.trim());
+                    if (hEl && hEl.innerText.trim()) horas.push(hEl.innerText.replace('•', '').trim());
+                });
 
-def scrape_microsoft_events() -> list:
-    """
-    Función que maneja todo el proceso de scraping del catálogo y las páginas individuales.
-    Retorna la lista de eventos extraídos.
-    """
-    eventos_extraidos = []
-    vistos = set()
+                // 7. Link / URL del Evento
+                const linkEl = card.querySelector('a.btn[href], a[href*="msevents.microsoft.com"]');
+                const url = linkEl ? linkEl.href : null;
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(user_agent=USER_AGENT, viewport={"width": 1440, "height": 900})
-        pagina = context.new_page()
+                return {
+                    "Fuente": "Microsoft Events (es-co)",
+                    "Etiqueta": etiqueta,
+                    "Nombre de evento": titulo,
+                    "Descripcion": descripcion,
+                    "Lugar": ubicacion,
+                    "Fecha": fechas.join(" / ") || null,
+                    "Hora": horas.join(" / ") || null,
+                    "url": url
+                };
+            });
+        }
+    """)
+
+async def scrape_catalogo() -> list:
+    todos_los_eventos = []
+    urls_vistas = set()
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        context = await browser.new_context(user_agent=USER_AGENT, viewport={"width": 1440, "height": 900})
+        
+        await context.route("**/*", bloquear_recursos)
+        pagina = await context.new_page()
+
+        log.info(f"Navegando al catálogo inicial de Microsoft Events (Meta: {META_EVENTOS} eventos)...")
+        await pagina.goto(URL_INICIAL, wait_until="networkidle", timeout=60000)
 
         numero_pagina = 1
-        cookies_cerradas = False
-        links_crudos = []
 
-        # -- PASO 1: Navegar por la paginación para recolectar links --
-        log.info("Iniciando recolección de links en el catálogo...")
-        
-        while len(links_crudos) < LIMITE_EVENTOS and numero_pagina <= 15:
-            url = construir_url_catalogo(numero_pagina)
-            log.info(f"Navegando a página {numero_pagina}: {url}")
-            
+        while len(todos_los_eventos) < META_EVENTOS and numero_pagina <= LIMITE_MAX_PAGINAS:
+            log.info(f"Procesando página {numero_pagina}...")
+
+            # Esperar a que el contenedor dinámico esté presente en el DOM
             try:
-                pagina.goto(url, wait_until="domcontentloaded", timeout=45000)
-            except Exception as e:
-                log.error(f"Error navegando a {url}: {e}")
+                await pagina.wait_for_selector(".dynamic-content__content", timeout=20000)
+            except Exception:
+                log.warning(f"No se encontró .dynamic-content__content en la página {numero_pagina}.")
                 break
 
-            pagina.wait_for_timeout(3000)
-            if not cookies_cerradas:
-                cerrar_banner_cookies(pagina)
-                cookies_cerradas = True
+            # Breve scroll para forzar lazy loading
+            await pagina.evaluate("window.scrollBy(0, 400)")
+            await pagina.wait_for_timeout(1500)
 
-            # Recolectar links visibles
-            anchors = pagina.locator(SELECTOR_LINKS).all()
-            links_en_pagina = 0
-            
-            for anchor in anchors:
+            # Extraer las tarjetas de la página actual
+            eventos_pagina = await extraer_eventos_desde_dynamic_content(pagina)
+
+            if not eventos_pagina:
+                log.info("No se encontraron tarjetas en esta página. Fin del catálogo.")
+                break
+
+            nuevos_en_pagina = 0
+            for evento in eventos_pagina:
+                if len(todos_los_eventos) >= META_EVENTOS:
+                    break
+
+                identificador = evento["url"] or evento["Nombre de evento"]
+                if identificador and identificador not in urls_vistas:
+                    urls_vistas.add(identificador)
+                    todos_los_eventos.append(evento)
+                    nuevos_en_pagina += 1
+
+            log.info(f"  Página {numero_pagina}: {nuevos_en_pagina} eventos nuevos. Total acumulado: {len(todos_los_eventos)}/{META_EVENTOS}")
+
+            if len(todos_los_eventos) >= META_EVENTOS:
+                log.info(f"¡Meta de {META_EVENTOS} eventos alcanzada!")
+                break
+
+            # Buscar botón de siguiente página
+            selector_siguiente = (
+                "a.page-link[aria-label*='Next'], "
+                "a.page-link[aria-label*='Siguiente'], "
+                "button[aria-label*='Next'], "
+                "button[aria-label*='Siguiente'], "
+                "a.pagination-next, "
+                "button:has-text('>')"
+            )
+            siguiente_btn = pagina.locator(selector_siguiente).first
+
+            if await siguiente_btn.is_visible():
+                primer_titulo_anterior = todos_los_eventos[-1]["Nombre de evento"] if todos_los_eventos else ""
+
+                await siguiente_btn.click()
+                await pagina.wait_for_timeout(2500)
+
+                # Confirmar actualización de página verificando cambio de primer título
                 try:
-                    href = anchor.get_attribute("href")
-                    if not href:
-                        continue
-                        
-                    if href not in vistos:
-                        # Sacamos un pequeño backup del texto de la tarjeta del catálogo
-                        tarjeta_texto = anchor.inner_text().strip()
-                        lineas_tarjeta = [l.strip() for l in tarjeta_texto.split('\n') if l.strip()]
-                        
-                        links_crudos.append({
-                            "url": href,
-                            "tarjeta_backup": lineas_tarjeta
-                        })
-                        vistos.add(href)
-                        links_en_pagina += 1
-                except:
-                    pass
+                    await pagina.wait_for_function(
+                        """(tituloAnterior) => {
+                            const primerTitulo = document.querySelector('.dynamic-content__content .block-feature__title')?.innerText.trim();
+                            return primerTitulo && primerTitulo !== tituloAnterior;
+                        }""",
+                        arg=primer_titulo_anterior,
+                        timeout=10000
+                    )
+                except Exception:
+                    log.info("La página no actualizó más contenido o se llegó al final de los resultados.")
+                    break
 
-            log.info(f"  Página {numero_pagina}: {links_en_pagina} links nuevos. Total acumulado: {len(links_crudos)}")
+                numero_pagina += 1
+            else:
+                log.info("No se encontró el botón de 'Siguiente página' activo.")
+                break
 
-            if links_en_pagina == 0:
-                 log.info("  No se encontraron más links. Fin de la paginación.")
-                 break
-                 
-            numero_pagina += 1
+        await browser.close()
 
-        links_crudos = links_crudos[:LIMITE_EVENTOS]
+    return todos_los_eventos
 
-        # -- PASO 2: Visitar cada página individual y extraer la data pesada --
-        log.info(f"\nExtrayendo la información cruda de {len(links_crudos)} eventos de Microsoft para el Agente...")
-        for i, item in enumerate(links_crudos, start=1):
-            log.info(f"  [{i}/{len(links_crudos)}] -> {item['url']}")
-            
-            datos_evento = extraer_detalle_completo(pagina, item["url"])
-            
-            # Usar la tarjeta del catálogo para rellenar lo básico si falla el DOM individual
-            backup = item["tarjeta_backup"]
-            
-            # En el catálogo de Microsoft, usualmente la fecha/hora y formato están al final de la tarjeta
-            if backup:
-                if not datos_evento["titulo"] and len(backup) > 0:
-                    # El título suele ser el primer texto relevante
-                    for linea in backup:
-                        if len(linea) > 10 and not linea.lower().startswith(("register", "details", "learn")):
-                            datos_evento["titulo"] = linea
-                            break
+async def ejecutar_y_guardar(nombre_archivo="dataset_microsoft_events.json"):
+    """Punto de entrada principal: Ejecuta la extracción y sobrescribe el JSON objetivo."""
+    log.info(f"Iniciando extracción masiva sobre '{URL_INICIAL}'...")
+    datos = await scrape_catalogo()
 
-            eventos_extraidos.append(datos_evento)
-
-        browser.close()
-        
-    return eventos_extraidos
-
-
-def ejecutar_scraper_microsoft_y_guardar(nombre_archivo="dataset_microsoft_events.json"):
-    """
-    Función principal que invoca el scraper y guarda la información en disco.
-    """
-    log.info("Iniciando el proceso de extracción de Microsoft Events...")
-    datos_eventos = scrape_microsoft_events()
-    
-    # -- PASO 3: Guardar el Dataset --
+    # Sobrescribe el archivo de destino con los datos extraídos en formato JSON utf-8
     with open(nombre_archivo, "w", encoding="utf-8") as f:
-        json.dump(datos_eventos, f, ensure_ascii=False, indent=4)
-        
-    log.info(f"¡Extracción completada! Se guardaron {len(datos_eventos)} eventos en '{nombre_archivo}'.")
-    
-    return datos_eventos
+        json.dump(datos, f, ensure_ascii=False, indent=4)
 
+    log.info(f"¡Éxito! Se sobrescribió '{nombre_archivo}' con {len(datos)} eventos.")
+    return datos
 
-# Bloque de ejecución principal
 if __name__ == "__main__":
-    # Puedes modificar el nombre del archivo enviándolo como parámetro
-    ejecutar_scraper_microsoft_y_guardar()
+    asyncio.run(ejecutar_y_guardar("dataset_microsoft_events.json"))

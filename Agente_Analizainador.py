@@ -1,160 +1,126 @@
-import os
 import json
-import traceback
-from typing import List, Optional
-from pydantic import BaseModel, Field
+import os
+import asyncio
 from dotenv import load_dotenv
+from pydantic import BaseModel, Field
+from typing import List
+from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_core.tools import tool
-from langchain.agents import create_agent
-from langchain_core.messages import HumanMessage
 
-
-# ============================================================
-# 1. ESQUEMAS DE SALIDA (Campos Obligatorios Estrictos)
-# ============================================================
-class OfertaEducativa(BaseModel):
-    # CAMPOS ESTRICTAMENTE OBLIGATORIOS
-    nombre_curso: str = Field(description="Nombre oficial del curso, evento o tutoría académica.")
-    fecha_evento: str = Field(description="Fecha exacta en la que se realizará el evento (ej. 01/07/2026).")
-    hora_evento: str = Field(description="Hora de inicio del evento (ej. 08:00).")
-    modalidad: str = Field(description="Modalidad del evento (ej. Virtual, Presencial).")
-    ponente: str = Field(description="Nombre del profesor o instructor que imparte el curso (ej. Johan Matiz).")
-    enlace_registro: str = Field(description="URL o enlace directo para registro o conexión al evento.")
+# ====================================================================
+# 1. DEFINICIÓN DE LA ESTRUCTURA DE DATOS (PYDANTIC)
+# ====================================================================
+class EventoEstructurado(BaseModel):
+    fuente: str = Field(description="La fuente del evento (ej. Microsoft, Microsoft Events, etc.)")
+    url: str = Field(description="El enlace URL de registro o detalles del evento")
+    nombre: str = Field(description="El nombre completo del evento")
     
-    # CAMPOS OPCIONALES (Si existen en el correo, se extraen; si no, quedan como None)
-    publico_objetivo: Optional[str] = Field(None, description="A quién va dirigido el curso (opcional).")
-    descripcion_curso: Optional[str] = Field(None, description="Breve resumen del contenido o temario (opcional).")
-    duracion: Optional[str] = Field(None, description="Duración de la sesión (opcional).")
-    idioma: Optional[str] = Field(None, description="Idioma del evento (opcional).")
-    entidad_organiza: Optional[str] = Field(None, description="Institución o empresa que organiza (opcional).")
-    prerequisitos: Optional[str] = Field(None, description="Conocimientos previos requeridos (opcional).")
+    # --- Instrucciones enfocadas en leer el contenido, no la estructura ---
+    fechas: List[str] = Field(description="Lee todo el texto de principio a fin. Extrae literalmente todas las fechas mencionadas (ej. Tuesday, 28th July 2026). Guárdalas como elementos separados.")
+    hora_inicio_final: List[str] = Field(description="Lee todo el texto de principio a fin. Extrae literalmente todos los bloques de horarios, incluyendo sus zonas horarias (ej. GMT+10:00) y ciudades. Guárdalos como elementos separados.")
+    
+    tipo_de_eventos: str = Field(description="El formato o tipo de evento (ej. Virtual, Presencial, Hackathon, Taller)")
+    descripcion: str = Field(description="Un resumen breve y claro de la descripción del evento")
+    tags: List[str] = Field(description="Una lista de 3 a 5 tags clave generados a partir del contenido, tema y descripción del curso")
+    prerequisitos: str = Field(description="Conocimientos, herramientas o requisitos previos mencionados. Si no hay, indicar 'Ninguno'")
+    nivel: str = Field(description="Nivel del curso o evento (ej. Principiante, Intermedio, Avanzado, No especificado)")
 
-class RespuestaFinal(BaseModel):
-    ofertas: List[OfertaEducativa] = Field(description="Lista de ofertas detectadas. Vacía si no hay ninguna.")
+# ====================================================================
+# 2. FUNCIONES AUXILIARES Y DE PROCESAMIENTO
+# ====================================================================
+def limpiar_consola():
+    """Limpia la consola dependiendo del sistema operativo."""
+    os.system('cls' if os.name == 'nt' else 'clear')
 
-# ============================================================
-# 2. HERRAMIENTA DE EXTRACCIÓN ESTRUCTURADA
-# ============================================================
-@tool
-def analizar_oferta_estructurada(texto_correo: str) -> str:
-    """
-    Usa esta herramienta para analizar el contenido de un correo específico y extraer
-    estrictamente la información de ofertas académicas en formato JSON.
-    """
-    llm_estricto = ChatGoogleGenerativeAI(
-        model="gemini-3.1-flash-lite",
-        temperature=0.1,
-        google_api_key=os.environ.get("GEMINI_API_KEY")
-    ).with_structured_output(RespuestaFinal)
+async def procesar_lote_agente(lote: list, modelo) -> list:
+    """Procesa un bloque de eventos de forma asíncrona y paralela usando Gemini."""
+    
+    # --- CAMBIO CLAVE: Ordenamos ignorar la estructura JSON ---
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", "Eres un experto en lectura de comprensión y extracción de datos. "
+                   "REGLA PRINCIPAL: NO te guíes por la estructura, las llaves o el formato del JSON. "
+                   "Trata el texto que vas a recibir como si fuera un documento de texto plano y continuo. "
+                   "Lee TODA la información contenida, de principio a fin, ignorando la jerarquía de los datos.\n\n"
+                   "Busca en todo el texto cualquier mención literal de:\n"
+                   "1. Fechas exactas.\n"
+                   "2. Horarios, rangos de horas, zonas horarias (ej. GMT+12:00) y ciudades (ej. Auckland, Sydney).\n"
+                   "Extrae absolutamente TODAS las fechas y TODOS los horarios tal cual están escritos en la información."),
+        ("human", "Ignora la estructura JSON y extrae la información basándote ÚNICAMENTE en todo el texto contenido aquí:\n\n{evento_raw}")
+    ])
+    
+    cadena = prompt | modelo.with_structured_output(EventoEstructurado)
+    inputs = [{"evento_raw": json.dumps(evento, ensure_ascii=False)} for evento in lote]
+    resultados = await cadena.abatch(inputs)
+    return resultados
 
-    prompt = f"Extrae ofertas educativas de este correo. Si es spam o personal, devuelve una lista vacía:\n\n{texto_correo}"
+# ====================================================================
+# 3. FUNCIÓN PRINCIPAL DE EJECUCIÓN
+# ====================================================================
+async def mostrar_eventos_con_agente(archivo: str):
     try:
-        res = llm_estricto.invoke(prompt)
-        return json.dumps(res.model_dump(exclude_none=True), ensure_ascii=False)
-    except Exception:
-        return json.dumps({"ofertas": []})
+        with open(archivo, 'r', encoding='utf-8') as f:
+            eventos = json.load(f)
+    except FileNotFoundError:
+        print(f"Error: No se encontró el archivo '{archivo}'.")
+        return
+    except json.JSONDecodeError:
+        print("Error: El archivo no tiene un formato JSON válido.")
+        return
 
+    total_eventos = len(eventos)
+    if total_eventos == 0:
+        print("El archivo está vacío. No hay eventos para mostrar.")
+        return
 
-# ============================================================
-# 3. CLASE DEL AGENTE ESPECIALISTA EN ANÁLISIS DE CORREOS
-# ============================================================
-class AgenteAnalizadorChat:
-    """
-    Especialista: SOLO sabe buscar correos en Gmail y analizarlos para detectar
-    ofertas académicas. No envía correos ni conoce al Cursoinador.
-    Es invocado por el Agente Coordinador, nunca directamente por el usuario final.
-    """
+    llm = ChatGoogleGenerativeAI(
+        model="gemini-3.1-flash-lite", 
+        temperature=0.0,
+        max_retries=3 
+    )
+    
+    tamano_lote = 10
+    
+    for i in range(0, total_eventos, tamano_lote):
+        if i > 0:
+            limpiar_consola()
+            
+        print(f"--- EVENTOS {i + 1} AL {min(i + tamano_lote, total_eventos)} DE {total_eventos} ---")
+        print("El agente Gemini está leyendo todo el contenido como texto plano...\n")
+        
+        lote_raw = eventos[i:i + tamano_lote]
+        lote_procesado = await procesar_lote_agente(lote_raw, llm)
+        
+        for j, evento_estructurado in enumerate(lote_procesado):
+            if not evento_estructurado:
+                print(f"[{i + j + 1}] Error al procesar este evento con el modelo.\n")
+                continue
 
-    PROMPT_COORDINADOR = """
-Eres un asistente experto en revisar el correo del usuario para detectar cursos,
-tutorías u ofertas académicas. Recibes instrucciones de un Agente Coordinador, no
-directamente del usuario, así que responde de forma clara y completa para que ese
-coordinador pueda reenviar tu respuesta.
+            numero_evento = i + j + 1
+            
+            fechas_formateadas = "\n        - ".join(evento_estructurado.fechas) if evento_estructurado.fechas else "No encontradas en el texto"
+            horarios_formateados = "\n        - ".join(evento_estructurado.hora_inicio_final) if evento_estructurado.hora_inicio_final else "No encontrados en el texto"
 
-PASOS A SEGUIR:
-1. Usa 'buscar_correos_gmail' para traer los correos que se te pida revisar.
-2. Usa 'analizar_oferta_estructurada' para evaluar el texto de CADA correo recuperado.
-3. Devuelve una respuesta estructurada y conversacional, mostrando solo las ofertas
-   detectadas basándote en los JSON devueltos por la herramienta de análisis.
-4. Si no se detecta ninguna oferta, dilo explícitamente.
-"""
+            print(f"[{numero_evento}] {evento_estructurado.nombre.upper()}")
+            print(f"    * Fuente: {evento_estructurado.fuente}")
+            print(f"    * URL: {evento_estructurado.url}")
+            print(f"    * Fechas:\n        - {fechas_formateadas}")
+            print(f"    * Horario:\n        - {horarios_formateados}")
+            print(f"    * Tipo de Evento: {evento_estructurado.tipo_de_eventos}")
+            print(f"    * Nivel: {evento_estructurado.nivel}")
+            print(f"    * Prerrequisitos: {evento_estructurado.prerequisitos}")
+            print(f"    * Tags Generados: {', '.join(evento_estructurado.tags)}")
+            print(f"    * Descripción: {evento_estructurado.descripcion}\n")
+            print("-" * 60 + "\n")
+        
+        if i + tamano_lote < total_eventos:
+            input("Presiona ENTER para continuar...")
+        else:
+            print("--- FIN DEL ARCHIVO ---")
 
-    def __init__(self, herramientas_gmail: list, model_name: str = "gemini-3.1-flash-lite", temperature: float = 0.2):
-        self._cargar_entorno()
-
-        # Combinamos las herramientas de Gmail con la herramienta estructurada
-        self.tools = herramientas_gmail + [analizar_oferta_estructurada]
-
-        self.llm = ChatGoogleGenerativeAI(
-            model=model_name,
-            temperature=temperature,
-            google_api_key=self.gemini_api_key,
-        )
-
-        self.agent = self._crear_agente()
-
-        self.historial = []
-
-    def _cargar_entorno(self):
-        load_dotenv()
-        self.gemini_api_key = os.getenv("GEMINI_API_KEY")
-        if not self.gemini_api_key:
-            raise ValueError("No se encontró GEMINI_API_KEY")
-
-    def _crear_agente(self):
-        return create_agent(
-            model=self.llm,
-            tools=self.tools,
-            system_prompt=self.PROMPT_COORDINADOR
-        )
-
-    def _extraer_texto(self, content) -> str:
-        """
-        Normaliza el contenido del mensaje a texto plano.
-        Algunos modelos (como Gemini) devuelven el content como una lista
-        de bloques [{'type': 'text', 'text': '...'}], en vez de un string.
-        """
-        if isinstance(content, str):
-            return content
-
-        if isinstance(content, list):
-            partes = [
-                bloque.get("text", "")
-                for bloque in content
-                if isinstance(bloque, dict) and bloque.get("type") == "text"
-            ]
-            return " ".join(p for p in partes if p)
-
-        return str(content)
-
-    def procesar_solicitud(self, mensaje_usuario: str) -> dict:
-        try:
-            self.historial.append(HumanMessage(content=mensaje_usuario))
-
-            inputs = {"messages": self.historial}
-
-            print(f"DEBUG [Analizador]: Evaluando solicitud con {len(self.tools)} herramientas disponibles...")
-
-            resultado = self.agent.invoke(inputs)
-
-            mensajes = resultado.get("messages", [])
-
-            if not mensajes:
-                return {"output": "Sin respuesta."}
-
-            ultimo = mensajes[-1]
-            contenido = self._extraer_texto(getattr(ultimo, "content", str(ultimo)))
-
-            # Guardamos el historial completo devuelto por el agente (incluye tool calls)
-            self.historial = mensajes
-
-            return {"output": contenido}
-
-        except Exception as e:
-            traceback.print_exc()
-            return {"output": f"Error interno en Agente Analizador: {str(e)}"}
-
-    # Punto de entrada simple usado por el Agente Coordinador
-    def enviar_mensaje(self, mensaje_usuario: str) -> str:
-        return self.procesar_solicitud(mensaje_usuario)["output"]
+# ====================================================================
+# 4. PUNTO DE ENTRADA (ENTRY POINT)
+# ====================================================================
+if __name__ == "__main__":
+    load_dotenv()
+    archivo_json = 'dataset_microsoft_events.json' 
+    asyncio.run(mostrar_eventos_con_agente(archivo_json))

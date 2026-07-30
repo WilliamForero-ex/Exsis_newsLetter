@@ -1,7 +1,6 @@
 """
-Script para scrapear la agenda de eventos de Hola TD SYNNEX (mes actual)
-y guardar, de cada evento: nombre, descripción, fecha, hora de inicio,
-hora de fin y el texto crudo en un archivo JSON.
+Script para scrapear la agenda de eventos de Hola TD SYNNEX desde el mes actual
+hasta diciembre del año en curso, extrayendo la información en formato JSON enriquecido.
 
 Uso:
     python scraper_tdsynnex_dataset.py
@@ -28,68 +27,76 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 )
 
-# Patrón de las páginas de detalle de un evento: /agenda-<slug>.html
+# Patrón de las páginas de detalle de un evento
 PATRON_EVENTO = re.compile(r"/agenda-[^/]+\.html$", re.IGNORECASE)
 
-# Patrón fecha + hora de inicio + hora de fin, ej: "10/07/2026 11:00 - 12:00"
+# Patrón fecha + hora de inicio + hora de fin, ej: "31/07/2026 11:00 - 12:00"
 PATRON_FECHA_HORA = re.compile(
     r"(\d{2}/\d{2}/\d{4})\D{0,10}?(\d{1,2}:\d{2})\s*-\s*(\d{1,2}:\d{2})"
 )
 
-def construir_url_mes_actual() -> str:
-    """Arma la URL de la agenda para el mes y año actuales, según el
-    patrón observado en el sitio: agenda_0_0_<mes>_<anio>.html
-    """
+def construir_urls_hasta_diciembre() -> list[str]:
+    """Genera las URLs de la agenda desde el mes actual hasta diciembre."""
     ahora = datetime.now()
-    return f"{DOMINIO}/agenda_0_0_{ahora.month}_{ahora.year}.html"
+    anio_actual = ahora.year
+    mes_actual = ahora.month
+    
+    urls = []
+    for mes in range(mes_actual, 13):
+        urls.append(f"{DOMINIO}/agenda_0_0_{mes}_{anio_actual}.html")
+    return urls
 
-def extraer_links_eventos(browser: Browser, url: str, espera_extra_ms: int = 3000) -> list[str]:
-    """Abre la página de agenda del mes, espera a que cargue el contenido
-    dinámico, y devuelve las URLs únicas de los eventos individuales.
-    """
+def extraer_links_eventos(browser: Browser, urls_meses: list[str], espera_extra_ms: int = 2000) -> list[str]:
+    """Recorre las páginas de la agenda de cada mes y devuelve las URLs únicas de los eventos."""
     urls_eventos: set[str] = set()
     pagina = browser.new_page(user_agent=USER_AGENT)
 
     try:
-        log.info(f"Navegando a {url} ...")
-        pagina.goto(url, wait_until="networkidle", timeout=30000)
-        pagina.wait_for_timeout(espera_extra_ms)
+        for url_mes in urls_meses:
+            log.info(f"Navegando a agenda del mes: {url_mes} ...")
+            try:
+                pagina.goto(url_mes, wait_until="networkidle", timeout=30000)
+                pagina.wait_for_timeout(espera_extra_ms)
 
-        anchors = pagina.eval_on_selector_all(
-            "a[href]", "els => els.map(e => e.getAttribute('href'))"
-        )
-        log.info(f"Se encontraron {len(anchors)} enlaces en total en la página.")
-    except Exception as e:
-        log.error(f"No se pudo cargar la agenda ({url}): {e}")
-        anchors = []
+                anchors = pagina.eval_on_selector_all(
+                    "a[href]", "els => els.map(e => e.getAttribute('href'))"
+                )
+                
+                enlaces_mes = 0
+                for href in anchors:
+                    if not href:
+                        continue
+                    url_absoluta = urljoin(DOMINIO, href)
+                    parsed = urlparse(url_absoluta)
+
+                    if "holatdsynnex.com" not in parsed.netloc:
+                        continue
+
+                    if PATRON_EVENTO.search(parsed.path):
+                        if url_absoluta not in urls_eventos:
+                            urls_eventos.add(url_absoluta)
+                            enlaces_mes += 1
+                
+                log.info(f"  -> Encontrados {enlaces_mes} eventos nuevos en esta página.")
+            except Exception as e:
+                log.warning(f"No se pudo cargar o procesar la agenda ({url_mes}): {e}")
+
     finally:
         pagina.close()
 
-    for href in anchors:
-        if not href:
-            continue
-        url_absoluta = urljoin(DOMINIO, href)
-        parsed = urlparse(url_absoluta)
-
-        if "holatdsynnex.com" not in parsed.netloc:
-            continue
-
-        if PATRON_EVENTO.search(parsed.path):
-            urls_eventos.add(url_absoluta)
-
-    log.info(f"Se identificaron {len(urls_eventos)} eventos únicos para el mes actual.")
+    log.info(f"Total de eventos únicos recopilados hasta diciembre: {len(urls_eventos)}")
     return sorted(urls_eventos)
 
 def extraer_detalle_evento(browser: Browser, url: str) -> dict | None:
-    """Abre la página de detalle de un evento y extrae nombre, descripción,
-    fecha, hora de inicio y hora de fin.
-    """
+    """Abre la página de detalle de un evento y extrae sus campos estructurados."""
     pagina = browser.new_page(user_agent=USER_AGENT)
     try:
         pagina.goto(url, wait_until="networkidle", timeout=30000)
         pagina.wait_for_timeout(1500)
 
-        # --- Nombre ---
+        texto_completo = pagina.locator("body").inner_text()
+
+        # 1. Nombre del evento
         nombre = None
         try:
             nombre = pagina.locator("h1").first.inner_text(timeout=3000).strip()
@@ -98,31 +105,55 @@ def extraer_detalle_evento(browser: Browser, url: str) -> dict | None:
         if not nombre:
             nombre = pagina.title().strip()
 
-        # --- Descripción (meta description / og:description) ---
+        # 2. Descripción
         descripcion = pagina.get_attribute('meta[name="description"]', "content")
         if not descripcion:
             descripcion = pagina.get_attribute('meta[property="og:description"]', "content")
         descripcion = (descripcion or "").strip()
 
-        # --- Fecha y horario ---
-        texto_completo = pagina.locator("body").inner_text()
-        match = PATRON_FECHA_HORA.search(texto_completo)
+        # Fallback para descripción si la etiqueta meta está vacía
+        if not descripcion:
+            match_desc = re.search(r'(Te invitamos[^\n]+(?:\n[^\n]+){1,3})', texto_completo, re.IGNORECASE)
+            if match_desc:
+                descripcion = match_desc.group(1).strip()
 
-        if match:
-            fecha, hora_inicio, hora_fin = match.group(1), match.group(2), match.group(3)
+        # 3. Fecha y Horas
+        match_fecha = PATRON_FECHA_HORA.search(texto_completo)
+        if match_fecha:
+            fecha = match_fecha.group(1)
+            hora = f"{match_fecha.group(2)} - {match_fecha.group(3)}"
         else:
-            fecha, hora_inicio, hora_fin = None, None, None
-            log.warning(f"No se encontró patrón de fecha/hora en: {url}")
+            fecha, hora = "No especificada", "No especificada"
 
-        # Añadimos texto_crudo_html para mantener la consistencia con los otros scripts
+        # 4. Agenda del evento
+        agenda = None
+        match_agenda = re.search(
+            r'(?:Agenda|Programa)[:\n]\s*(.*?)(?=Ponente|Speaker|¡Te esperamos!|Inscríbete|$)', 
+            texto_completo, 
+            re.IGNORECASE | re.DOTALL
+        )
+        if match_agenda and len(match_agenda.group(1).strip()) > 10:
+            agenda = match_agenda.group(1).strip()
+
+        # 5. Ponente / Speaker
+        ponente = "No especificado"
+        match_ponente = re.search(
+            r'(?:Ponentes?|Speakers?|Presentador(?:es)?)\s*[:\n]\s*([^\n]+)', 
+            texto_completo, 
+            re.IGNORECASE
+        )
+        if match_ponente:
+            ponente = match_ponente.group(1).strip()
+
         return {
-            "nombre": nombre,
-            "descripcion": descripcion,
-            "fecha": fecha,
-            "hora_inicio": hora_inicio,
-            "hora_fin": hora_fin,
+            "fuente": "TD SyNNEX",
             "url": url,
-            "texto_crudo_html": texto_completo.strip()
+            "nombre": nombre,
+            "Descripcion": descripcion,
+            "Agenda": agenda,
+            "Ponente": ponente,
+            "Fecha": fecha,
+            "Hora": hora
         }
     except Exception as e:
         log.error(f"No se pudo procesar el evento ({url}): {e}")
@@ -130,22 +161,18 @@ def extraer_detalle_evento(browser: Browser, url: str) -> dict | None:
     finally:
         pagina.close()
 
-
 def scrape_tdsynnex_events() -> list:
-    """
-    Función que orquesta el scraping completo de TD SYNNEX.
-    Retorna la lista de eventos extraídos.
-    """
-    url_agenda = construir_url_mes_actual()
+    """Orquesta el scraping navegando por los meses desde el actual hasta diciembre."""
+    urls_meses = construir_urls_hasta_diciembre()
     eventos = []
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         try:
-            urls_eventos = extraer_links_eventos(browser, url_agenda)
+            urls_eventos = extraer_links_eventos(browser, urls_meses)
 
             for i, url_evento in enumerate(urls_eventos, start=1):
-                log.info(f"[{i}/{len(urls_eventos)}] Procesando evento: {url_evento}")
+                log.info(f"[{i}/{len(urls_eventos)}] Extrayendo detalle: {url_evento}")
                 detalle = extraer_detalle_evento(browser, url_evento)
                 if detalle:
                     eventos.append(detalle)
@@ -154,27 +181,16 @@ def scrape_tdsynnex_events() -> list:
             
     return eventos
 
-
 def ejecutar_scraper_tdsynnex_y_guardar(nombre_archivo="dataset_tdsynnex_events.json"):
-    """
-    Llama a la función de scraping y guarda los datos en un archivo JSON.
-    Recibe el nombre del archivo por parámetro para mayor flexibilidad.
-    """
-    log.info("Iniciando el proceso de extracción de TD SYNNEX...")
+    """Inicia la extracción de datos y los guarda en un archivo JSON."""
+    log.info("Iniciando la extracción de eventos en TD SYNNEX hasta diciembre...")
     datos_eventos = scrape_tdsynnex_events()
 
-    # Guardar en archivo JSON
     with open(nombre_archivo, "w", encoding="utf-8") as f:
         json.dump(datos_eventos, f, ensure_ascii=False, indent=4)
 
     log.info(f"\n=== Extracción completada. {len(datos_eventos)} eventos guardados en '{nombre_archivo}' ===")
-    
-    # Retorna los datos por si se necesita usarlos directamente tras la ejecución
     return datos_eventos
 
-
-# Bloque de ejecución principal
 if __name__ == "__main__":
-    # Puedes pasarle un nombre distinto al archivo si lo deseas:
-    # ejecutar_scraper_tdsynnex_y_guardar("mis_eventos_synnex.json")
-    ejecutar_scraper_tdsynnex_y_guardar() 
+    ejecutar_scraper_tdsynnex_y_guardar()

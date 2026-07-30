@@ -241,7 +241,7 @@ def procesar_bbc(clave_json: str, titulo_seccion: str) -> str:
             "fecha": i.get("fecha_publicacion"), 
             "url": i.get("url_noticia"), 
             # Reducido a 120 chars para aligerar la carga de 25 tarjetas
-            "resumen": _recortar_texto_limpio(i.get("texto_crudo_html"), 120)
+            "resumen": _recortar_texto_limpio(i.get("texto_crudo_html"), 600)
         } for i in datos
     ]
     

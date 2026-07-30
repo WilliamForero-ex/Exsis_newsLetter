@@ -1,0 +1,2343 @@
+{
+    "Salud y Bienestar": {
+        "Salud Pública y Prevención": [
+            "consumo de sustancias psicoactivas",
+            "substance abuse prevention",
+            "prevención en salud mental",
+            "mental health prevention",
+            "riesgo psicosocial",
+            "psychosocial risk"
+        ],
+        "Atención Médica y Emergencias": [
+            "soporte vital básico",
+            "basic life support",
+            "atención de urgencias",
+            "emergency care",
+            "bioseguridad",
+            "biosafety"
+        ],
+        "Calidad y Normatividad en Salud": [
+            "acreditación en salud",
+            "healthcare accreditation",
+            "garantía de la calidad",
+            "quality assurance"
+        ],
+        "Actividad Física": [
+            "actividad física",
+            "physical activity",
+            "adultos mayores",
+            "older adults"
+        ],
+        "Nutrición y Seguridad Alimentaria": [
+            "nutrición y alimentación",
+            "nutrition and food science",
+            "enfermedades trasmitidas por alimentos",
+            "foodborne diseases",
+            "manipulación de alimentos",
+            "food handling"
+        ],
+        "Atención Clínica": [
+            "atención clínica integral",
+            "comprehensive clinical care",
+            "tratamiento del dengue",
+            "dengue treatment",
+            "atención al recién nacido",
+            "newborn care",
+            "salud materno perinatal",
+            "maternal and perinatal health"
+        ],
+        "Salud Mental y Social": [
+            "atención psicosocial",
+            "psychosocial care",
+            "víctimas de conflicto armado",
+            "victims of armed conflict",
+            "violencias sexuales",
+            "sexual violence",
+            "derechos humanos",
+            "human rights"
+        ],
+        "Urgencias Médicas": [
+            "atención de urgencias",
+            "emergency care",
+            "ataque con agentes químicos",
+            "chemical attack victims"
+        ],
+        "Prevención y Atención Médica": [
+            "cesación del tabaquismo",
+            "smoking cessation",
+            "atención del tabaquismo",
+            "tobacco treatment"
+        ],
+        "Promoción de la Salud": [
+            "estilos de vida saludable",
+            "healthy lifestyles",
+            "condiciones de salud",
+            "health conditions"
+        ],
+        "Salud Mental": [
+            "salud mental",
+            "mental health",
+            "política pública",
+            "public policy",
+            "prevención",
+            "prevention"
+        ]
+    },
+    "Ciencias Sociales y Derechos": {
+        "Equidad y Género": [
+            "violencia de género",
+            "gender-based violence",
+            "equidad de género",
+            "gender equality"
+        ],
+        "Políticas Públicas": [
+            "derechos en salud mental",
+            "mental health rights"
+        ]
+    },
+    "Medio Ambiente y Recursos Naturales": {
+        "Conservación Ambiental": [
+            "sistemas socioecológicos",
+            "socio-ecological systems",
+            "restauración ambiental",
+            "environmental restoration"
+        ],
+        "Química y Productos Naturales": [
+            "aceites esenciales",
+            "essential oils",
+            "métodos de extracción",
+            "extraction methods"
+        ]
+    },
+    "Educación y Tecnología": {
+        "Innovación Educativa": [
+            "metodología stem",
+            "stem methodology",
+            "integración curricular",
+            "curricular integration"
+        ],
+        "Tecnología Educativa": [
+            "uso de tic en la formación",
+            "ict in education",
+            "educación y tecnología",
+            "educational technology"
+        ]
+    },
+    "Industria y Manufactura": {
+        "Artesanías y Textiles": [
+            "acabados textiles",
+            "textile finishing",
+            "piezas artesanales",
+            "handicraft pieces"
+        ],
+        "Tecnología de la Madera": [
+            "secado de madera",
+            "timber drying",
+            "procesos industriales de madera",
+            "industrial wood processing"
+        ],
+        "Electrónica y Potencia": [
+            "motores eléctricos",
+            "electric motors",
+            "imanes permanentes",
+            "permanent magnet motors",
+            "corriente alterna",
+            "alternating current"
+        ],
+        "Soldadura y Metalurgia": [
+            "códigos de soldadura",
+            "welding codes",
+            "normas de soldadura",
+            "welding standards",
+            "control de calidad",
+            "quality control",
+            "procedimientos de soldadura",
+            "welding procedures"
+        ]
+    },
+    "Seguridad Industrial": {
+        "Salud Ocupacional": [
+            "seguridad y salud en el trabajo",
+            "occupational health and safety"
+        ]
+    },
+    "Ciencias Agropecuarias y Agroindustria": {
+        "Producción Agrícola y Agroecología": [
+            "agricultura ecológica",
+            "organic farming",
+            "fertilización orgánica",
+            "organic fertilization",
+            "manejo de suelos",
+            "soil management",
+            "desarrollo rural",
+            "rural development",
+            "semillas criollas",
+            "heirloom seeds",
+            "agroecología",
+            "agroecology"
+        ],
+        "Agroindustria Alimentaria": [
+            "aditivos alimentarios",
+            "food additives",
+            "control de calidad",
+            "quality control",
+            "poscosecha",
+            "post-harvest",
+            "procesos agroindustriales",
+            "agro-industrial processes"
+        ]
+    },
+    "Administración y Ciencias Empresariales": {
+        "Talento Humano": [
+            "selección de personal",
+            "personnel selection",
+            "contratación laboral",
+            "hiring",
+            "nómina",
+            "payroll"
+        ],
+        "Documentación y Archivo": [
+            "administración documental",
+            "records management",
+            "comunicaciones oficiales",
+            "official communications",
+            "criterios de archivo",
+            "filing criteria"
+        ],
+        "Logística y Finanzas": [
+            "control de inventarios",
+            "inventory control",
+            "costos de inventario",
+            "inventory costs",
+            "cartera de créditos",
+            "credit portfolio",
+            "cobranza",
+            "debt collection",
+            "amortización",
+            "amortization"
+        ]
+    },
+    "Diseño y Moda": {
+        "Confección y Textil": [
+            "ajuste de prendas",
+            "garment fitting",
+            "tejido plano",
+            "woven fabric",
+            "confección femenina",
+            "womenswear"
+        ],
+        "Diseño de Accesorios": [
+            "diseño de calzado",
+            "footwear design",
+            "marroquinería",
+            "leather goods design",
+            "colecciones de moda",
+            "fashion collections"
+        ]
+    },
+    "Ciencia de Datos e Inteligencia Artificial": {
+        "Analítica de Datos": [
+            "algoritmo k-means",
+            "k-means clustering",
+            "aprendizaje no supervisado",
+            "unsupervised learning",
+            "análisis exploratorio de datos",
+            "exploratory data analysis",
+            "minería de datos",
+            "data mining",
+            "python"
+        ],
+        "Inteligencia Artificial y Agentes Cognitivos": [
+            "inteligencia artificial",
+            "artificial intelligence",
+            "agentes de ia",
+            "ai agents",
+            "microsoft copilot studio",
+            "azure ai foundry",
+            "semantic kernel",
+            "agentes conversacionales",
+            "conversational agents"
+        ],
+        "Análisis de Datos y Visualización": [
+            "análisis de datos",
+            "data analytics",
+            "power bi",
+            "visualización de datos",
+            "data visualization",
+            "tableros de control",
+            "dashboards",
+            "inteligencia de negocios",
+            "business intelligence"
+        ],
+        "Infraestructura y Bases de Datos en la Nube": [
+            "microsoft azure",
+            "almacenamiento de datos",
+            "data storage",
+            "arquitectura de datos",
+            "data architecture",
+            "modernización de datos",
+            "data modernization",
+            "nube computacional",
+            "cloud computing"
+        ],
+        "Estrategia Digital y Transformación Tecnológica": [
+            "estrategia de ia",
+            "ai strategy",
+            "transformación digital",
+            "digital transformation",
+            "liderazgo tecnológico",
+            "technology leadership"
+        ]
+    },
+    "Ciencias Agropecuarias": {
+        "Zootecnia y Nutrición Animal": [
+            "alimentación bovina",
+            "bovine nutrition",
+            "forrajes",
+            "forage conservation",
+            "suplementación animal",
+            "animal supplementation",
+            "producción ganadera",
+            "livestock production"
+        ],
+        "Acuicultura": [
+            "alimentación de peces",
+            "fish feeding",
+            "cultivo acuícola",
+            "aquaculture farming",
+            "indicadores técnicos de producción",
+            "production technical indicators"
+        ]
+    },
+    "Finanzas y Riesgos": {
+        "Finanzas Corporativas": [
+            "análisis financiero",
+            "financial analysis",
+            "valor económico agregado",
+            "economic value added",
+            "toma de decisiones",
+            "decision making"
+        ],
+        "Cumplimiento y Riesgos": [
+            "lavado de activos",
+            "money laundering",
+            "sarlaft",
+            "riesgos financieros",
+            "financial risks",
+            "financiación del terrorismo",
+            "counter-terrorism financing"
+        ]
+    },
+    "Infraestructura y Servicios Públicos": {
+        "Saneamiento Básico": [
+            "sistemas de agua",
+            "water systems",
+            "tratamiento de agua",
+            "water treatment",
+            "saneamiento",
+            "sanitation"
+        ]
+    },
+    "Tecnología e Informática": {
+        "Desarrollo de Software": [
+            "desarrollo móvil",
+            "mobile development",
+            "app inventor",
+            "android",
+            "programación",
+            "programming"
+        ],
+        "Auditoría de Sistemas": [
+            "auditoría informática",
+            "it auditing",
+            "auditoría interna",
+            "internal audit",
+            "normas iso 9001",
+            "iso 9001 standards"
+        ],
+        "Diseño y Modelado CAD": [
+            "autocad 2d",
+            "autocad 2d design",
+            "autocad 3d",
+            "autocad 3d modeling",
+            "dibujo asistido por computador",
+            "computer aided design",
+            "diseño de impresión",
+            "print design"
+        ],
+        "Ingeniería de Datos": [
+            "bases de datos",
+            "databases",
+            "bases de datos relacionales",
+            "relational databases",
+            "modelo entidad relación",
+            "entity relationship model",
+            "normalización de datos",
+            "data normalization"
+        ],
+        "Ingeniería de Software": [
+            "calidad de software",
+            "software quality",
+            "modelos de calidad",
+            "quality models",
+            "estándares iso",
+            "iso standards",
+            "ciclo de vida de software",
+            "software development lifecycle"
+        ],
+        "Soluciones Digitales": [
+            "códigos qr",
+            "qr codes",
+            "estrategia de comunicación",
+            "communication strategy",
+            "piezas publicitarias",
+            "advertising assets"
+        ],
+        "Telecomunicaciones": [
+            "comunicaciones analógicas",
+            "analog communications",
+            "señales analógicas",
+            "analog signals",
+            "espectro electromagnético",
+            "electromagnetic spectrum",
+            "modulación analógica",
+            "analog modulation",
+            "radiofrecuencia",
+            "radio frequency"
+        ],
+        "Programación y Software": [
+            "lenguaje c",
+            "c programming language",
+            "estructuras de control",
+            "control structures",
+            "iteración",
+            "iteration",
+            "operadores",
+            "operators"
+        ],
+        "Redes y Conectividad": [
+            "protocolo de internet",
+            "internet protocol",
+            "configuración de redes",
+            "network configuration",
+            "ipv6"
+        ],
+        "Bases de Datos": [
+            "bases de datos relacionales",
+            "relational databases",
+            "mysql"
+        ],
+        "Tecnologías Educativas": [
+            "didácticas activas",
+            "active learning",
+            "integración de tic",
+            "ict integration"
+        ],
+        "Desarrollo de Software y Aplicaciones": [
+            "low-code",
+            "power pages",
+            "web development",
+            "creación de sitios web",
+            "desarrollo de agentes",
+            "build agents"
+        ],
+        "Ciberseguridad y Protección de Datos": [
+            "microsoft security",
+            "ciberseguridad",
+            "cybersecurity",
+            "protección de datos",
+            "data protection",
+            "microsoft purview",
+            "cloud security",
+            "microsoft defender",
+            "cnapp"
+        ],
+        "Inteligencia Artificial": [
+            "inteligencia artificial",
+            "artificial intelligence",
+            "agentic ai",
+            "microsoft 365 copilot"
+        ],
+        "Infraestructura y Computación en la Nube": [
+            "computación en la nube",
+            "cloud computing",
+            "microsoft azure",
+            "azure arc",
+            "sql server",
+            "base de datos",
+            "database"
+        ],
+        "Análisis de Datos y Visualización": [
+            "análisis de datos",
+            "data analytics",
+            "dashboard",
+            "dataverse"
+        ],
+        "Automatización y Productividad": [
+            "microsoft power platform",
+            "automatización de flujos",
+            "workflow automation",
+            "dinámica de clientes",
+            "customer experience"
+        ]
+    },
+    "Calidad y Auditoría": {
+        "Auditoría y Control": [
+            "auditoría de sistemas",
+            "systems auditing",
+            "mapa de procesos",
+            "process mapping",
+            "planes de acción",
+            "action plans"
+        ]
+    },
+    "Análisis de Datos y Tecnología": {
+        "Ciencia de Datos": [
+            "analítica de datos",
+            "data analytics",
+            "tratamiento de información",
+            "data processing",
+            "homogenización de datos",
+            "data cleansing"
+        ],
+        "Ofimática Avanzada": [
+            "funciones de excel",
+            "excel functions",
+            "hojas de cálculo",
+            "spreadsheets"
+        ]
+    },
+    "Industria y Producción": {
+        "Seguridad Alimentaria": [
+            "buenas prácticas de manufactura",
+            "good manufacturing practices",
+            "industria de alimentos",
+            "food industry"
+        ],
+        "Sostenibilidad": [
+            "economía circular",
+            "circular economy",
+            "contextos productivos",
+            "productive contexts"
+        ]
+    },
+    "Sector Agropecuario": {
+        "Ganadería": [
+            "buenas prácticas ganaderas",
+            "good livestock practices",
+            "producción bovina",
+            "beef cattle production"
+        ],
+        "Tecnología Agropecuaria": [
+            "extensión rural",
+            "rural extension",
+            "riesgo agroclimático",
+            "agroclimatic risk",
+            "predio rural",
+            "rural property"
+        ],
+        "Buenas Prácticas Agrícolas": [
+            "buenas prácticas agrícolas",
+            "good agricultural practices",
+            "planificación de producción",
+            "production planning",
+            "cultivo de plátano",
+            "banana farming",
+            "cultivo de mora",
+            "blackberry farming",
+            "cultivo de naranja",
+            "orange farming",
+            "exportación de productos agrícolas",
+            "agricultural product export"
+        ],
+        "Apicultura": [
+            "buenas prácticas apícolas",
+            "good beekeeping practices",
+            "manejo de colmena",
+            "beehive management"
+        ],
+        "Producción Animal": [
+            "alimentación de rumiantes",
+            "ruminant nutrition",
+            "conservación de forrajes",
+            "forage preservation"
+        ],
+        "Procesamiento de Alimentos": [
+            "conservación de frutas y verduras",
+            "fruits and vegetables preservation",
+            "poscosecha",
+            "postharvest"
+        ],
+        "Avicultura": [
+            "pollos de engorde",
+            "broiler farming",
+            "gallinas ponedoras",
+            "laying hens",
+            "huevos semicriollos",
+            "free range eggs"
+        ],
+        "Cultivos Agrícolas": [
+            "cultivo de orellana",
+            "oyster mushroom cultivation",
+            "palma de aceite",
+            "oil palm cultivation",
+            "poscosecha",
+            "post harvest"
+        ]
+    },
+    "Salud": {
+        "Atención Integral": [
+            "valoración integral en salud",
+            "comprehensive health assessment",
+            "promoción y mantenimiento de la salud",
+            "health promotion and maintenance"
+        ]
+    },
+    "Ciencias Ambientales y Desarrollo Social": {
+        "Investigación y Saberes Ancestrales": [
+            "recursos naturales",
+            "natural resources",
+            "comunidades étnicas",
+            "ethnic communities",
+            "investigación etnográfica",
+            "ethnographic research"
+        ],
+        "Políticas Públicas y Protección Social": [
+            "protección integral",
+            "integral protection",
+            "derechos de la niñez",
+            "child rights",
+            "superación de la pobreza",
+            "poverty reduction",
+            "transferencias monetarias",
+            "conditional cash transfers"
+        ]
+    },
+    "Tecnología e Ingeniería de Software": {
+        "Calidad y Normativa de Software": [
+            "calidad de software",
+            "software quality",
+            "norma iso 25000",
+            "iso 25000 standard",
+            "métricas de software",
+            "software metrics"
+        ],
+        "Metodologías Ágiles": [
+            "metodología scrum",
+            "scrum framework",
+            "desarrollo de software",
+            "software development",
+            "análisis de requerimientos",
+            "requirements analysis"
+        ],
+        "Inteligencia Artificial y Datos": [
+            "inteligencia artificial",
+            "artificial intelligence",
+            "integración de datos",
+            "data integration",
+            "procesamiento de datos",
+            "data processing",
+            "visualización de datos",
+            "data visualization"
+        ]
+    },
+    "Ciencias Sociales y Comportamiento Humano": {
+        "Ética y Habilidades Blandas": [
+            "ética laboral",
+            "workplace ethics",
+            "habilidades sociales",
+            "soft skills",
+            "comportamiento profesional",
+            "professional behavior"
+        ]
+    },
+    "Sector Agropecuario y Producción": {
+        "Zootecnia": [
+            "buenas prácticas ganaderas",
+            "good livestock practices",
+            "producción ovina",
+            "sheep farming",
+            "producción caprina",
+            "goat farming"
+        ]
+    },
+    "Energía y Automatización Industrial": {
+        "Eficiencia Energética": [
+            "eficiencia energética",
+            "energy efficiency",
+            "etiquetado energético",
+            "energy labeling",
+            "uso racional de la energía",
+            "rational energy use"
+        ],
+        "Automatización Industrial": [
+            "sensores industriales",
+            "industrial sensors",
+            "circuitos eléctricos",
+            "electrical circuits",
+            "sistemas de control",
+            "control systems",
+            "adquisición de señales",
+            "signal acquisition"
+        ]
+    },
+    "Marketing y Comercio": {
+        "Estrategias Comerciales": [
+            "merchandising",
+            "visual merchandising",
+            "punto de venta",
+            "point of sale",
+            "experiencia de marca",
+            "brand experience",
+            "estrategias de compra",
+            "purchasing strategies"
+        ]
+    },
+    "Telecomunicaciones y Redes": {
+        "Infraestructura de Conectividad": [
+            "redes internas de telecomunicaciones",
+            "internal telecommunications networks",
+            "reglamento técnico",
+            "technical regulation",
+            "servicios de telecomunicaciones",
+            "telecommunication services"
+        ]
+    },
+    "Seguridad y Salud Industrial": {
+        "Seguridad Química": [
+            "sistema globalmente armonizado",
+            "globally harmonized system",
+            "productos químicos",
+            "chemical products",
+            "almacenamiento de químicos",
+            "chemical storage"
+        ],
+        "Protocolos de Bioseguridad": [
+            "protocolos de bioseguridad",
+            "biosafety protocols",
+            "sector transporte",
+            "transportation sector"
+        ]
+    },
+    "Administración y Finanzas": {
+        "Normativa Tributaria": [
+            "normas tributarias",
+            "tax regulations",
+            "micro y pequeñas empresas",
+            "micro and small enterprises",
+            "responsabilidades tributarias",
+            "tax liabilities"
+        ],
+        "Administración Educativa": [
+            "administración educativa",
+            "educational administration",
+            "formación profesional",
+            "vocational training",
+            "sofíaplus"
+        ],
+        "Contabilidad y Finanzas": [
+            "contabilidad de costos",
+            "cost accounting",
+            "presupuestos",
+            "budgets",
+            "estados financieros",
+            "financial statements",
+            "plan único de cuentas",
+            "chart of accounts",
+            "reconocimiento financiero",
+            "financial recognition"
+        ],
+        "Talento Humano y Seguridad Social": [
+            "carrera administrativa",
+            "civil service career",
+            "empleo público",
+            "public employment",
+            "seguridad social",
+            "social security",
+            "vinculación de personal",
+            "staff recruitment",
+            "contratación laboral",
+            "labor contracting"
+        ]
+    },
+    "Turismo y Hotelería": {
+        "Operaciones Hoteleras": [
+            "establecimientos de alojamiento",
+            "accommodation establishments",
+            "procedimientos de check in",
+            "check-in procedures",
+            "sector hotelero",
+            "hospitality industry"
+        ],
+        "Diseño de Experiencias Turísticas": [
+            "experiencia turística",
+            "tourist experience",
+            "conexiones turísticas",
+            "tourism connections"
+        ]
+    },
+    "Tecnología e Información Geográfica": {
+        "Geoinformática": [
+            "sistemas de información geográfica",
+            "geographic information systems",
+            "sistemas forestales",
+            "forest systems",
+            "agroecología",
+            "agroecology"
+        ]
+    },
+    "Logística y Transporte": {
+        "Cadena de Suministro": [
+            "trazabilidad",
+            "traceability",
+            "operación de transporte",
+            "transport operation",
+            "rastreo de carga",
+            "freight tracking"
+        ]
+    },
+    "Imagen Personal": {
+        "Estética": [
+            "maquillaje social",
+            "social makeup",
+            "técnicas de maquillaje",
+            "makeup techniques"
+        ]
+    },
+    "Negocios y Desarrollo Organizacional": {
+        "Comercio y Logística": [
+            "redes de valor",
+            "value networks",
+            "e-commerce",
+            "logística de comercio electrónico",
+            "e-commerce logistics"
+        ],
+        "Habilidades Directivas": [
+            "estrategias de influencia",
+            "influence strategies",
+            "estilos de comunicación",
+            "communication styles"
+        ]
+    },
+    "Tecnologías de la Información": {
+        "Desarrollo Digital": [
+            "computación en la nube",
+            "cloud computing",
+            "lenguaje html",
+            "html language",
+            "tic",
+            "ict"
+        ],
+        "Ciberseguridad": [
+            "ciberseguridad",
+            "cybersecurity",
+            "vulnerabilidades",
+            "vulnerabilities",
+            "activos de información",
+            "information assets"
+        ]
+    },
+    "Medio Ambiente y Sostenibilidad": {
+        "Normativa Ambiental": [
+            "estudios ambientales",
+            "environmental studies",
+            "iso 14001",
+            "norma ambiental",
+            "environmental standard"
+        ],
+        "Recursos Naturales": [
+            "recursos forestales",
+            "forest resources",
+            "aprovechamiento sostenible",
+            "sustainable harvesting",
+            "ecosistemas",
+            "ecosystems"
+        ]
+    },
+    "Construcción e Infraestructura": {
+        "Estructuras": [
+            "armado de refuerzo",
+            "reinforcement assembly",
+            "infraestructura",
+            "infrastructure"
+        ],
+        "Obra Civil": [
+            "construcción de muros",
+            "masonry wall construction",
+            "ladrillo y bloque",
+            "brick and block masonry"
+        ],
+        "Edificación y Obra Civil": [
+            "construcción básica",
+            "basic construction",
+            "pavimento de concreto",
+            "concrete pavement",
+            "vías terciarias",
+            "tertiary roads",
+            "placa huella",
+            "concrete strip road"
+        ],
+        "Costos y Presupuestos": [
+            "costos unitarios directos",
+            "direct unit costs",
+            "presupuesto de obra",
+            "construction budget",
+            "análisis de precios",
+            "price analysis",
+            "administración imprevistos utilidades",
+            "aiu",
+            "mano de obra",
+            "labor costs",
+            "equipo de construcción",
+            "construction equipment"
+        ]
+    },
+    "Finanzas y Servicios": {
+        "Asesoría Financiera": [
+            "asesoría al consumidor financiero",
+            "financial consumer advisory",
+            "criterios financieros",
+            "financial criteria"
+        ]
+    },
+    "Administración y Servicio": {
+        "Atención al Cliente": [
+            "atención al cliente",
+            "customer service",
+            "procesos administrativos",
+            "administrative processes",
+            "medios tecnológicos",
+            "technological tools"
+        ]
+    },
+    "Administración y Servicios": {
+        "Atención al Cliente": [
+            "atención al ciudadano",
+            "customer service",
+            "servicio al ciudadano"
+        ],
+        "Contabilidad y Finanzas": [
+            "contabilidad",
+            "accounting",
+            "costos y presupuestos",
+            "costing and budgeting"
+        ]
+    },
+    "Hospitalidad y Servicios Gastronómicos": {
+        "Servicio de Alimentos y Bebidas": [
+            "servicio de mesa",
+            "table service",
+            "barista",
+            "bartending",
+            "atención al cliente",
+            "customer service"
+        ]
+    },
+    "Sector Agropecuario y Ambiental": {
+        "Producción Agrícola": [
+            "agricultura ecológica",
+            "organic farming",
+            "operación de tractores",
+            "tractor operation"
+        ],
+        "Acuicultura": [
+            "bioseguridad acuícola",
+            "aquaculture biosecurity",
+            "producción pesquera",
+            "fisheries production"
+        ]
+    },
+    "Construcción y Mantenimiento": {
+        "Infraestructura Hidráulica": [
+            "instalación de tuberías",
+            "pipe installation",
+            "suministro de agua",
+            "water supply systems"
+        ],
+        "Soporte Técnico": [
+            "mantenimiento de computadores",
+            "computer maintenance",
+            "hardware repair"
+        ]
+    },
+    "Comercio y Marketing": {
+        "Estrategia Comercial": [
+            "mercadeo",
+            "marketing",
+            "servicio al cliente",
+            "customer service"
+        ]
+    },
+    "Estética y Salud": {
+        "Cosmética Profesional": [
+            "bioseguridad",
+            "biosecurity",
+            "estética facial",
+            "facial aesthetics",
+            "estética corporal",
+            "body aesthetics"
+        ]
+    },
+    "Tecnologías Emergentes": {
+        "Tecnología Blockchain": [
+            "contratos inteligentes",
+            "smart contracts",
+            "criptomonedas",
+            "cryptocurrency",
+            "criptografía",
+            "cryptography"
+        ]
+    },
+    "Mecánica Automotriz y Maquinaria": {
+        "Sistemas de Inyección Diesel": [
+            "bombas lineales mecánicas",
+            "mechanical inline fuel pumps",
+            "motor diesel",
+            "diesel engine",
+            "bomba de transferencia",
+            "transfer pump",
+            "gobernor neumático",
+            "pneumatic governor"
+        ]
+    },
+    "Industria Alimentaria": {
+        "Inocuidad y Manipulación de Alimentos": [
+            "manipulación de la carne",
+            "meat handling",
+            "higiene de los alimentos",
+            "food hygiene",
+            "agentes contaminantes",
+            "food contaminants"
+        ]
+    },
+    "Finanzas y Contabilidad": {
+        "Costos y Análisis Financiero": [
+            "costos por orden de producción",
+            "production order costing",
+            "indicadores financieros",
+            "financial ratios",
+            "indicadores de liquidez",
+            "liquidity ratios",
+            "indicadores de endeudamiento",
+            "debt ratios",
+            "indicadores de rentabilidad",
+            "profitability ratios"
+        ],
+        "Contabilidad": [
+            "cuentas contables",
+            "accounting ledgers",
+            "registros contables",
+            "accounting records",
+            "ingresos y egresos",
+            "income and expenses"
+        ]
+    },
+    "Calidad y Mejora Continua": {
+        "Normalización y Control de Procesos": [
+            "mejoramiento continuo",
+            "continuous improvement",
+            "análisis de información",
+            "data analysis",
+            "criterios metodológicos",
+            "methodological criteria"
+        ]
+    },
+    "Marketing y Comunicación": {
+        "Estrategia Digital": [
+            "campañas digitales",
+            "digital campaigns",
+            "buyer persona",
+            "ecosistema digital",
+            "digital ecosystem"
+        ],
+        "Fundamentos de Mercadeo": [
+            "elementos del marketing",
+            "marketing elements"
+        ]
+    },
+    "Ciencias Ambientales y Sostenibilidad": {
+        "Sostenibilidad Organizacional": [
+            "desempeño ambiental",
+            "environmental performance",
+            "gestión ambiental",
+            "environmental management"
+        ],
+        "Recursos Naturales": [
+            "servicios ecosistémicos",
+            "ecosystem services",
+            "recursos forestales",
+            "forest resources",
+            "ciclos biogeoquímicos",
+            "biogeochemical cycles",
+            "áreas de conservación",
+            "conservation areas"
+        ]
+    },
+    "Finanzas y Economía": {
+        "Sector Financiero": [
+            "sector financiero",
+            "financial sector",
+            "lavado de activos",
+            "anti-money laundering",
+            "centrales de información",
+            "credit bureaus",
+            "contexto económico",
+            "economic context"
+        ]
+    },
+    "Industrias Creativas y Culturales": {
+        "Producción Audiovisual": [
+            "proyectos audiovisuales",
+            "audiovisual projects",
+            "patrimonio cultural",
+            "cultural heritage",
+            "actividad cinematográfica",
+            "cinematographic activity"
+        ]
+    },
+    "Tecnología e Ingeniería": {
+        "Automatización Industrial": [
+            "controlador lógico programable",
+            "programmable logic controller",
+            "plc",
+            "seguridad y salud en el trabajo",
+            "occupational health and safety",
+            "controladores lógicos programables",
+            "programmable logic controllers",
+            "lenguajes de programación",
+            "programming languages",
+            "diagrama de contactos",
+            "ladder logic"
+        ]
+    },
+    "Emprendimiento y Administración": {
+        "Dirección Empresarial": [
+            "pensamiento empresarial",
+            "entrepreneurial mindset",
+            "planes estratégicos",
+            "strategic planning",
+            "creación de empresas",
+            "business creation",
+            "planes de negocio",
+            "business plans"
+        ],
+        "Gerencia Corporativa": [
+            "gerencia de mercadeo",
+            "marketing management",
+            "recursos humanos",
+            "human resources",
+            "finanzas corporativas",
+            "corporate finance",
+            "toma de decisiones",
+            "decision making"
+        ]
+    },
+    "Administración y Negocios": {
+        "Emprendimiento y Estrategia Empresarial": [
+            "mentalidad emprendedora",
+            "entrepreneurial mindset",
+            "planes de negocio",
+            "business plans",
+            "creación de empresas",
+            "business creation",
+            "análisis de viabilidad",
+            "feasibility analysis",
+            "direccionamiento estratégico",
+            "strategic direction"
+        ],
+        "Mercadeo y Ventas": [
+            "análisis de ventas",
+            "sales analysis",
+            "ventaja competitiva",
+            "competitive advantage",
+            "posicionamiento de mercado",
+            "market positioning",
+            "estrategias de marketing",
+            "marketing strategies",
+            "campañas promocionales",
+            "promotional campaigns"
+        ]
+    },
+    "Ciencias Básicas": {
+        "Matemáticas y Física": [
+            "ciencias básicas",
+            "basic sciences",
+            "matemáticas",
+            "mathematics",
+            "física",
+            "physics"
+        ]
+    },
+    "Gastronomía y Artes Culinarias": {
+        "Técnicas de Cocina": [
+            "cocina básica",
+            "basic cooking",
+            "cocina criolla",
+            "creole cuisine",
+            "cocina internacional",
+            "international cuisine",
+            "técnicas culinarias",
+            "culinary techniques"
+        ]
+    },
+    "Comercio y Ventas": {
+        "Comercialización Textil": [
+            "comercialización de textiles",
+            "textile marketing",
+            "insumos textiles",
+            "textile supplies",
+            "ventas",
+            "sales"
+        ],
+        "Comercialización Agroecológica": [
+            "productos agroecológicos",
+            "agroecological products",
+            "comercialización participativa",
+            "participatory marketing"
+        ]
+    },
+    "Gastronomía": {
+        "Preparación de Alimentos": [
+            "comidas rápidas",
+            "fast food"
+        ]
+    },
+    "Marketing y Analítica Digital": {
+        "Estrategia Digital": [
+            "community management",
+            "social media strategy",
+            "estrategias de contenido",
+            "content strategy",
+            "engagement"
+        ],
+        "Analítica Web": [
+            "analítica web",
+            "web analytics",
+            "métricas en redes sociales",
+            "social media metrics"
+        ]
+    },
+    "Ciencias Sociales y Ciudadanía": {
+        "Seguridad Vial": [
+            "seguridad vial",
+            "road safety",
+            "código nacional de policía",
+            "national police code",
+            "señales de tránsito",
+            "traffic signs"
+        ],
+        "Desarrollo Ciudadano": [
+            "competencias ciudadanas",
+            "citizenship skills",
+            "política pública",
+            "public policy",
+            "competencia comunicativa",
+            "communicative competence"
+        ]
+    },
+    "Emprendimiento y Negocios": {
+        "Desarrollo Emprendedor": [
+            "comportamiento emprendedor",
+            "entrepreneurial behavior",
+            "competencias emprendedoras",
+            "entrepreneurial skills",
+            "negociación",
+            "negotiation"
+        ]
+    },
+    "Habilidades Blandas": {
+        "Comunicación Organizacional": [
+            "comunicación asertiva",
+            "assertive communication",
+            "trabajo en equipo",
+            "teamwork"
+        ]
+    },
+    "Habilidades Comunicativas y Empresariales": {
+        "Comunicación Organizacional": [
+            "comunicación en equipos",
+            "team communication",
+            "estrategia comunicativa",
+            "communication strategy",
+            "protocolos organizacionales",
+            "organizational protocols"
+        ]
+    },
+    "Idiomas y Lingüística": {
+        "Español para Extranjeros": [
+            "gramática española",
+            "spanish grammar",
+            "sintaxis",
+            "syntax",
+            "fonética",
+            "phonetics",
+            "adverbios",
+            "adverbs",
+            "conjugación verbal",
+            "verb conjugation",
+            "semántica",
+            "semantics"
+        ]
+    },
+    "Diseño y Confección": {
+        "Industria Textil": [
+            "confección de prendas",
+            "garment construction",
+            "patronaje y corte",
+            "pattern making and cutting"
+        ]
+    },
+    "Sector Agropecuario y Alimentos": {
+        "Zootecnia y Producción Animal": [
+            "construcciones avícolas",
+            "poultry housing",
+            "aves de postura",
+            "laying hens"
+        ],
+        "Tecnología de Alimentos": [
+            "control de calidad",
+            "quality control",
+            "productos cárnicos",
+            "meat products",
+            "higiene alimentaria",
+            "food hygiene"
+        ],
+        "Producción Agrícola": [
+            "producción agrícola",
+            "agricultural production",
+            "labores agrícolas",
+            "agricultural operations"
+        ]
+    },
+    "Ciencias Agropecuarias y Acuicultura": {
+        "Acuicultura": [
+            "control de calidad del agua",
+            "water quality control",
+            "acuicultura",
+            "aquaculture"
+        ],
+        "Zootecnia y Producción Animal": [
+            "especies menores",
+            "small animal production",
+            "producción pecuaria",
+            "livestock production"
+        ],
+        "Fitopatología y Cultivos": [
+            "control fitosanitario",
+            "phytosanitary control",
+            "cultivo de cacao",
+            "cocoa farming"
+        ]
+    },
+    "Administración y Documentación": {
+        "Archivística": [
+            "comunicaciones oficiales",
+            "official communications",
+            "unidades de correspondencia",
+            "mailroom services",
+            "control documental",
+            "document control"
+        ]
+    },
+    "Tecnología y Seguridad Informática": {
+        "Ciberseguridad": [
+            "seguridad de la información",
+            "information security",
+            "seguridad informática",
+            "computer security",
+            "auditoría de sistemas",
+            "information systems auditing",
+            "controles de aplicación",
+            "application controls"
+        ]
+    },
+    "Diseño Gráfico y Multimedia": {
+        "Diseño Vectorial": [
+            "coreldraw",
+            "diseño vectorial",
+            "vector design",
+            "mapas de bits",
+            "bitmaps",
+            "herramientas tridimensionales",
+            "3d tools",
+            "efectos especiales",
+            "special effects"
+        ]
+    },
+    "Educación y Talento Humano": {
+        "Evaluación de Competencias": [
+            "competencias laborales",
+            "job competencies",
+            "instrumentos de evaluación",
+            "evaluation instruments",
+            "evaluación educativa",
+            "educational assessment"
+        ]
+    },
+    "Industria Alimentaria y Gastronomía": {
+        "Carnicería y Procesamiento de Proteínas": [
+            "corte de carnes",
+            "meat cutting",
+            "cortes bovinos",
+            "beef cuts",
+            "cortes porcinos",
+            "pork cuts",
+            "especies menores",
+            "small livestock"
+        ]
+    },
+    "Artes Visuales y Diseño Digital": {
+        "Edición de Imagen": [
+            "fotomontaje",
+            "photo manipulation",
+            "adobe photoshop",
+            "image editing"
+        ]
+    },
+    "Tecnología e Industria 4.0": {
+        "Modelado y Simulación Digital": [
+            "gemelos digitales",
+            "digital twins",
+            "modelado 3d",
+            "3d modeling",
+            "diseño asistido por computadora",
+            "computer aided design",
+            "ensamble digital",
+            "digital assembly"
+        ]
+    },
+    "Desarrollo Humano y Habilidades Blandas": {
+        "Resolución de Conflictos": [
+            "creatividad laboral",
+            "creative problem solving",
+            "comunicación asertiva",
+            "assertive communication",
+            "resolución de conflictos",
+            "conflict resolution"
+        ]
+    },
+    "Administración y Ventas": {
+        "Relacionamiento con Clientes": [
+            "customer relationship management",
+            "crm",
+            "marketing relacional",
+            "relationship marketing"
+        ]
+    },
+    "Ciencias del Deporte": {
+        "Entrenamiento Físico": [
+            "cualidades físicas",
+            "physical qualities",
+            "entrenamiento deportivo",
+            "sports training"
+        ]
+    },
+    "Inteligencia Artificial y Computación en la Nube": {
+        "Arquitectura de Datos e IA": [
+            "azure databases",
+            "inteligencia artificial",
+            "artificial intelligence",
+            "azure app platform",
+            "token mindset",
+            "modelo de lenguaje",
+            "language models"
+        ],
+        "Agentes Inteligentes": [
+            "agentes de ia",
+            "ai agents",
+            "escalabilidad de ia",
+            "ai scaling",
+            "desarrollo de aplicaciones ia",
+            "ai app development"
+        ],
+        "Estrategia e Innovación Tecnológica": [
+            "innovación en la nube",
+            "cloud innovation",
+            "transformación digital",
+            "digital transformation",
+            "estrategias de adopción",
+            "adoption strategies"
+        ]
+    },
+    "Negocios y Ecosistema de Socios": {
+        "Marketing y Finanzas de Canal": [
+            "fondos de marketing",
+            "marketing funds",
+            "inversión de socios",
+            "partner investments",
+            "estrategias de mercado",
+            "go-to-market strategy"
+        ],
+        "Liderazgo y Educación": [
+            "liderazgo tecnológico",
+            "technology leadership",
+            "ia en educación",
+            "ai in education",
+            "hoja de ruta",
+            "roadmap"
+        ]
+    },
+    "Ciberseguridad": {
+        "Defensa y Protección": [
+            "ciberseguridad",
+            "cybersecurity",
+            "seguridad de red",
+            "network security",
+            "respuesta ante brechas",
+            "breach response"
+        ]
+    },
+    "Inteligencia Artificial y Automatización": {
+        "Agentes y Soluciones de IA": [
+            "inteligencia artificial",
+            "artificial intelligence",
+            "agentes de ia",
+            "ai agents",
+            "copilot studio",
+            "automatización de tareas",
+            "task automation"
+        ],
+        "Análisis y Estrategia de Negocios": [
+            "estrategia de negocios",
+            "business solutions",
+            "flujos de trabajo",
+            "workflows",
+            "productividad empresarial",
+            "business productivity"
+        ],
+        "IA Generativa y Agentes": [
+            "inteligencia artificial generativa",
+            "generative ai",
+            "agentes de ia",
+            "ai agents",
+            "graphrag",
+            "retrieval-augmented generation",
+            "microsoft 365 copilot",
+            "automatización de tareas",
+            "task automation",
+            "asistentes de inteligencia artificial",
+            "modelos de lenguaje",
+            "language models",
+            "microsoft copilot",
+            "microsoft copilot studio",
+            "desarrollo de agentes",
+            "agent development"
+        ],
+        "Desarrollo con IA": [
+            "agentes de ia",
+            "ai agents",
+            "copilot studio",
+            "github copilot",
+            "desarrollo low-code",
+            "low-code development"
+        ],
+        "Transformación Digital Educativa": [
+            "educación con ia",
+            "ai-ready school",
+            "estrategia de adopción de ia",
+            "ai roadmap"
+        ],
+        "IA para Productividad": [
+            "microsoft 365 copilot",
+            "asistente de ia",
+            "ai assistant",
+            "optimización de comunicaciones",
+            "toma de decisiones",
+            "decision making"
+        ],
+        "IA Generativa y Copilotos": [
+            "microsoft 365 copilot",
+            "inteligencia artificial",
+            "artificial intelligence",
+            "agentes ia",
+            "ai agents",
+            "copilot studio",
+            "low-code",
+            "github copilot",
+            "agentes de ia",
+            "ingeniería de prompts",
+            "smart prompting",
+            "automatización de flujos",
+            "workflow automation"
+        ],
+        "Desarrollo de Aplicaciones": [
+            "power apps",
+            "desarrollo low-code",
+            "low-code development",
+            "creación de aplicaciones",
+            "app development"
+        ],
+        "Agentes y Aplicaciones Inteligentes": [
+            "inteligencia artificial generativa",
+            "generative ai",
+            "agentes inteligentes",
+            "ai agents",
+            "aplicaciones de ia",
+            "ai apps",
+            "asistente virtual",
+            "ai assistant"
+        ],
+        "Productividad con IA": [
+            "copilot para finanzas",
+            "copilot for finance",
+            "copilot para ventas",
+            "copilot for sales",
+            "copilot para operaciones",
+            "copilot for operations",
+            "análisis de datos",
+            "data analysis"
+        ],
+        "Agentes Inteligentes y Copilot": [
+            "agentes inteligentes",
+            "context-aware agents",
+            "inteligencia artificial generativa",
+            "generative ai",
+            "microsoft copilot studio",
+            "automatización de flujos",
+            "workflow automation",
+            "low-code development"
+        ],
+        "Desarrollo de Agentes y Copilotos": [
+            "inteligencia artificial",
+            "artificial intelligence",
+            "agentes de ia",
+            "ai agents",
+            "copilotos",
+            "copilot studio",
+            "desarrollo low-code",
+            "low-code development"
+        ],
+        "Adopción y Productividad": [
+            "microsoft 365 copilot",
+            "estrategias de prompting",
+            "smart prompting strategies",
+            "productividad laboral",
+            "workplace productivity",
+            "adopción tecnológica",
+            "technology adoption"
+        ],
+        "Automatización Low-Code": [
+            "desarrollo sin código",
+            "no-code development",
+            "automatización de flujos de trabajo",
+            "workflow automation",
+            "power apps"
+        ],
+        "Agentes Inteligentes y Copilotos": [
+            "inteligencia artificial",
+            "artificial intelligence",
+            "agentes ia",
+            "ai agents",
+            "microsoft copilot",
+            "copilot studio",
+            "automatización de tareas",
+            "task automation"
+        ],
+        "Transformación Digital": [
+            "estrategia de ia",
+            "ai strategy",
+            "transformación empresarial",
+            "business transformation",
+            "productividad organizacional",
+            "organizational productivity"
+        ],
+        "IA Generativa y Asistentes Virtuales": [
+            "inteligencia artificial",
+            "artificial intelligence",
+            "microsoft 365 copilot",
+            "agentes ia",
+            "ai agents",
+            "estrategias de prompting",
+            "prompting strategies",
+            "microsoft copilot studio",
+            "low-code development"
+        ],
+        "Adopción y Capacitación Tecnológica": [
+            "adopción de tecnología",
+            "technology adoption",
+            "capacitación técnica",
+            "train-the-trainer"
+        ]
+    },
+    "Infraestructura de Datos y Nube": {
+        "Arquitectura de Datos": [
+            "ciencia de datos",
+            "data science",
+            "microsoft fabric",
+            "dataverse",
+            "inteligencia en tiempo real",
+            "real-time intelligence",
+            "modernización de datos",
+            "data estate modernization"
+        ],
+        "Ecosistema de Partners y Canales": [
+            "servicios gestionados",
+            "managed services providers",
+            "msp community",
+            "inversiones para partners",
+            "partner investments",
+            "programas de incentivos",
+            "programmatic incentives"
+        ]
+    },
+    "Software y Soluciones Empresariales": {
+        "Plataformas de Colaboración": [
+            "microsoft 365",
+            "copilot para microsoft 365",
+            "microsoft 365 copilot",
+            "dinamics 365",
+            "colaboración en equipo",
+            "team collaboration"
+        ],
+        "Aplicaciones en Educación": [
+            "tecnología educativa",
+            "edtech",
+            "campus inteligente",
+            "ai-ready campus"
+        ],
+        "Ventas y Operaciones": [
+            "ventas impulsadas por ia",
+            "ai-powered sales",
+            "crm",
+            "pronóstico de ventas",
+            "sales forecasting"
+        ]
+    },
+    "Ciberseguridad y Protección de Datos": {
+        "Seguridad Corporativa": [
+            "seguridad de la información",
+            "information security",
+            "protección de datos",
+            "data protection",
+            "estrategia de seguridad",
+            "security strategy"
+        ],
+        "Seguridad en la Nube": [
+            "seguridad en la nube",
+            "cloud security",
+            "protección de aplicaciones nativas",
+            "cnapp",
+            "microsoft defender"
+        ],
+        "Seguridad Operativa y Amenazas": [
+            "ciberseguridad",
+            "cybersecurity",
+            "detección de amenazas",
+            "threat detection",
+            "operaciones de seguridad",
+            "security operations",
+            "gobierno de datos",
+            "data governance",
+            "prevención de pérdida de datos",
+            "data loss prevention"
+        ]
+    },
+    "Infraestructura y Desarrollo de Software": {
+        "Nube y Modernización": [
+            "migración a la nube",
+            "cloud migration",
+            "modernización de aplicaciones",
+            "app modernization",
+            "windows server",
+            "sql server",
+            "desarrollo .net",
+            ".net development"
+        ],
+        "Plataformas de Aplicaciones": [
+            "desarrollo low-code",
+            "low-code development",
+            "power apps",
+            "creación de aplicaciones",
+            "app building"
+        ]
+    },
+    "Análisis de Datos y Visualización": {
+        "Inteligencia de Negocios": [
+            "análisis de datos",
+            "data analytics",
+            "visualización de datos",
+            "data visualization",
+            "paneles de control",
+            "dashboards"
+        ]
+    },
+    "Habilidades Profesionales y Estrategia": {
+        "Comunicación y Ventas": [
+            "entrenamiento en ventas",
+            "sales coaching",
+            "técnicas de presentación",
+            "pitching skills",
+            "colaboración empresarial",
+            "business collaboration"
+        ]
+    },
+    "Inteligencia Artificial y Ciencia de Datos": {
+        "Desarrollo de Agentes y Aplicaciones IA": [
+            "agentes de inteligencia artificial",
+            "agentic ai solutions",
+            "marcos de trabajo semánticos",
+            "semantic kernel agent framework",
+            "azure ai foundry"
+        ],
+        "Analítica de Datos y Business Intelligence": [
+            "análisis de datos",
+            "data analysis",
+            "inteligencia de negocios",
+            "business intelligence",
+            "consolidación de datos",
+            "data consolidation"
+        ],
+        "Inteligencia Artificial Generativa y Agentes": [
+            "inteligencia artificial",
+            "artificial intelligence",
+            "agentes de ia",
+            "ai agents",
+            "procesamiento de lenguaje natural",
+            "natural language processing",
+            "copilot"
+        ],
+        "Análisis y Visualización de Datos": [
+            "inteligencia en tiempo real",
+            "real-time intelligence",
+            "analítica de datos",
+            "data analytics",
+            "modelos de datos",
+            "data models",
+            "power bi"
+        ],
+        "Desarrollo de IA Generativa": [
+            "inteligencia artificial generativa",
+            "generative ai",
+            "azure ai foundry",
+            "modelos de lenguaje",
+            "language models",
+            "desarrollo de agentes",
+            "agent development"
+        ],
+        "Gobierno y Seguridad de IA": [
+            "seguridad de ia",
+            "ai security",
+            "gobierno de datos",
+            "data governance",
+            "protección de datos",
+            "data protection",
+            "copilot control system"
+        ],
+        "Analítica de Negocios": [
+            "analítica de datos",
+            "data analytics",
+            "visualización de datos",
+            "data visualization",
+            "paneles de control",
+            "dashboards",
+            "transformación digital",
+            "digital transformation"
+        ]
+    },
+    "Desarrollo de Software y Tecnologías Cloud": {
+        "Desarrollo Low-Code y Automatización": [
+            "desarrollo low-code",
+            "low-code development",
+            "creación de sitios web",
+            "website creation",
+            "automatización de flujos de trabajo",
+            "workflow automation",
+            "microsoft power platform",
+            "power apps",
+            "power pages"
+        ],
+        "Bases de Datos y Almacenamiento": [
+            "bases de datos sql",
+            "sql databases",
+            "azure database for postgresql",
+            "dataverse",
+            "microsoft fabric"
+        ],
+        "Ciberseguridad": [
+            "seguridad informática",
+            "cybersecurity",
+            "ciberseguridad ofensiva",
+            "offensive security",
+            "black hat"
+        ]
+    },
+    "Estrategia de Negocios y Ecosistemas Corporativos": {
+        "Estrategia Comercial y Asociaciones": [
+            "soluciones empresariales",
+            "business solutions",
+            "estrategia de negocios",
+            "business strategy",
+            "alianzas estratégicas",
+            "partnering and ecosystem"
+        ]
+    },
+    "Análisis de Datos y Business Intelligence": {
+        "Arquitectura de Datos": [
+            "microsoft fabric",
+            "consolidación de datos",
+            "data consolidation",
+            "datamart"
+        ],
+        "Análisis e Insights": [
+            "análisis de datos",
+            "data analytics",
+            "power bi",
+            "modelos de datos",
+            "data models",
+            "procesamiento de lenguaje natural",
+            "natural language"
+        ],
+        "Analítica de Datos y Visualización": [
+            "análisis de datos",
+            "data analytics",
+            "visualización de datos",
+            "data visualization",
+            "tableros de control",
+            "dashboards",
+            "modelado de datos",
+            "data modeling",
+            "microsoft fabric",
+            "power bi"
+        ]
+    },
+    "Desarrollo de Software y Aplicaciones": {
+        "Plataformas de Aplicación": [
+            "power apps",
+            "automatización de flujos de trabajo",
+            "workflow automation",
+            "aplicaciones sin código",
+            "no-code apps"
+        ]
+    },
+    "Análisis de Datos e Inteligencia de Negocios": {
+        "Visualización y Análisis de Datos": [
+            "análisis de datos",
+            "data analytics",
+            "visualización de datos",
+            "data visualization",
+            "power bi",
+            "paneles de control",
+            "dashboards",
+            "lenguaje natural",
+            "natural language"
+        ]
+    },
+    "Estrategia Corporativa y Productividad": {
+        "Productividad Organizacional": [
+            "optimización de comunicaciones",
+            "communication optimization",
+            "toma de decisiones",
+            "decision making",
+            "estrategia de negocios",
+            "business strategy",
+            "nube e inteligencia artificial",
+            "cloud and ai platforms"
+        ],
+        "Funciones Administrativas y Talento": [
+            "marketing digital",
+            "digital marketing",
+            "recursos humanos",
+            "human resources",
+            "reclutamiento",
+            "recruiting",
+            "inducción de personal",
+            "onboarding",
+            "tecnologías de la información",
+            "information technology"
+        ]
+    },
+    "Ciberseguridad y Gobernanza de Datos": {
+        "Seguridad de la Información": [
+            "protección de datos",
+            "data protection",
+            "prevención de pérdida de datos",
+            "data loss prevention",
+            "seguridad cibernética",
+            "cybersecurity",
+            "alertas de seguridad",
+            "security alerts",
+            "gobernanza de datos",
+            "data governance"
+        ]
+    },
+    "Ciencia de Datos e Infraestructura": {
+        "Análisis y Arquitectura de Datos": [
+            "microsoft fabric",
+            "análisis de datos",
+            "data analytics",
+            "consolidación de datos",
+            "data consolidation",
+            "inteligencia de negocios",
+            "business intelligence",
+            "power bi"
+        ]
+    },
+    "Ciencia de Datos y Analítica": {
+        "Análisis de Datos y Business Intelligence": [
+            "análisis de datos",
+            "data analytics",
+            "microsoft fabric",
+            "power bi",
+            "consolidación de datos",
+            "data consolidation",
+            "visualización de datos",
+            "data insights"
+        ],
+        "Inteligencia de Negocios y Visualización": [
+            "power bi",
+            "tableros de control",
+            "dashboards",
+            "análisis de datos",
+            "data analysis"
+        ],
+        "Arquitectura de Datos": [
+            "inteligencia en tiempo real",
+            "real-time intelligence",
+            "microsoft fabric",
+            "modelado de datos",
+            "data modeling",
+            "lenguaje natural",
+            "natural language"
+        ],
+        "Inteligencia de Datos": [
+            "inteligencia en tiempo real",
+            "real-time intelligence",
+            "análisis de datos",
+            "data analytics",
+            "microsoft fabric",
+            "power bi",
+            "consolidación de datos",
+            "data consolidation"
+        ],
+        "Arquitectura de Datos y Business Intelligence": [
+            "microsoft fabric",
+            "análisis de datos",
+            "data analytics",
+            "power bi",
+            "modelado de datos",
+            "data modeling",
+            "procesamiento de lenguaje natural",
+            "natural language processing",
+            "consolidación de datos",
+            "data consolidation"
+        ]
+    },
+    "Infraestructura y Computación en la Nube": {
+        "Arquitectura y Modernización de TI": [
+            "migración de infraestructura",
+            "infrastructure migration",
+            "modernización de aplicaciones",
+            "app modernization",
+            "azure cloud services",
+            "optimización de base de datos",
+            "database optimization"
+        ],
+        "Servicios en la Nube": [
+            "microsoft azure",
+            "estrategia de nube",
+            "cloud strategy",
+            "servicios heredados",
+            "legacy systems"
+        ],
+        "Desarrollo Low-Code": [
+            "power pages",
+            "desarrollo de sitios web",
+            "website development",
+            "low-code",
+            "dataverse"
+        ]
+    },
+    "Seguridad y Gobernanza de la Información": {
+        "Privacidad y Ciberseguridad": [
+            "gobernanza de datos",
+            "data governance",
+            "seguridad de la información",
+            "information security",
+            "privacidad de datos",
+            "data privacy"
+        ]
+    },
+    "Tecnología Aplicada por Sector": {
+        "Productividad y Herramientas Especializadas": [
+            "microsoft 365 copilot",
+            "productividad legal",
+            "legal research",
+            "herramientas de colaboración",
+            "collaboration tools",
+            "tecnología educativa",
+            "k-12 education technology"
+        ]
+    },
+    "Ciberseguridad y Gobernanza": {
+        "Protección de Infraestructura": [
+            "seguridad en la nube",
+            "cloud security",
+            "microsoft defender",
+            "protección de aplicaciones",
+            "app protection"
+        ],
+        "Privacidad y Datos": [
+            "gobernanza de datos",
+            "data governance",
+            "privacidad de datos",
+            "data privacy"
+        ],
+        "Protección de Información": [
+            "seguridad de la información",
+            "information security",
+            "gobernanza de datos",
+            "data governance",
+            "protección de privacidad",
+            "privacy protection",
+            "seguridad en la nube",
+            "cloud security"
+        ]
+    },
+    "Analítica y Ciencia de Datos": {
+        "Inteligencia de Negocios": [
+            "inteligencia en tiempo real",
+            "real-time intelligence",
+            "análisis de datos",
+            "data analysis",
+            "tableros de control",
+            "dashboards",
+            "visualización de datos",
+            "data visualization"
+        ]
+    },
+    "Recursos Humanos y Finanzas": {
+        "Aplicaciones Funcionales": [
+            "reclutamiento",
+            "recruiting",
+            "onboarding de empleados",
+            "employee onboarding",
+            "análisis financiero",
+            "financial insights"
+        ]
+    },
+    "Análisis de Datos y Computación en la Nube": {
+        "Ciencia y Análisis de Datos": [
+            "análisis de datos",
+            "data analysis",
+            "modelos de datos",
+            "data models",
+            "power bi",
+            "microsoft fabric",
+            "consolidación de datos",
+            "data consolidation",
+            "insights de negocio",
+            "business insights"
+        ],
+        "Infraestructura Cloud": [
+            "computación en la nube",
+            "cloud computing",
+            "azure",
+            "soluciones en la nube",
+            "cloud solutions",
+            "despliegue de aplicaciones",
+            "application deployment"
+        ]
+    },
+    "Ciberseguridad y Cumplimiento": {
+        "Seguridad Informática": [
+            "ciberseguridad",
+            "cybersecurity",
+            "seguridad de la información",
+            "information security",
+            "análisis de brechas",
+            "into the breach"
+        ],
+        "Estrategia y Consultoría": [
+            "advisory",
+            "inversiones estratégicas",
+            "partner investments",
+            "cumplimiento normativo",
+            "compliance requirements"
+        ]
+    },
+    "Productividad y Negocios": {
+        "Optimización Operativa": [
+            "operaciones de negocio",
+            "business operations",
+            "investigación legal",
+            "legal research",
+            "análisis de casos",
+            "case data"
+        ]
+    },
+    "Inteligencia Artificial y Desarrollo de Software": {
+        "Programación Asistida por IA": [
+            "github copilot",
+            "software development life cycle",
+            "sdlc",
+            "ai-powered assistant"
+        ],
+        "Agentes Inteligentes y Automatización": [
+            "agentes de ia",
+            "ai agents",
+            "automatización de flujos de trabajo",
+            "workflow automation"
+        ]
+    },
+    "Infraestructura Tecnológica y Operaciones": {
+        "Infraestructura Crítica y Nube": [
+            "infraestructura crítica",
+            "critical infrastructure",
+            "tecnología operacional",
+            "operational technology",
+            "computación en la nube",
+            "cloud computing"
+        ],
+        "Productividad Empresarial": [
+            "automatización de flujos",
+            "workflow automation",
+            "colaboración corporativa",
+            "corporate collaboration",
+            "eficiencia organizacional",
+            "organizational efficiency"
+        ]
+    },
+    "Desarrollo de Software y Nube": {
+        "Plataformas Low-Code": [
+            "desarrollo sin código",
+            "no-code development",
+            "aplicaciones empresariales",
+            "business applications",
+            "power apps",
+            "flujos de trabajo",
+            "workflows"
+        ],
+        "Infraestructura Cloud": [
+            "migración a la nube",
+            "cloud migration",
+            "modernización de infraestructura",
+            "infrastructure modernization",
+            "microsoft azure",
+            "bases de datos",
+            "databases"
+        ]
+    },
+    "Colaboración y Entornos de Trabajo": {
+        "Entornos Microsoft 365": [
+            "colaboración en equipo",
+            "team collaboration",
+            "microsoft 365",
+            "microsoft sharepoint",
+            "comunicación digital",
+            "digital communication"
+        ]
+    },
+    "Tecnología Empresarial": {
+        "Optimización de Procesos": [
+            "automatización empresarial",
+            "business process automation",
+            "productividad organizacional",
+            "organizational productivity",
+            "soluciones microsoft",
+            "microsoft solutions"
+        ]
+    },
+    "Tecnología e Inteligencia Artificial": {
+        "Desarrollo Low-Code": [
+            "agentes de inteligencia artificial",
+            "ai agents",
+            "desarrollo low-code",
+            "low-code development",
+            "microsoft copilot studio",
+            "power apps",
+            "automatización de flujos de trabajo",
+            "workflow automation"
+        ],
+        "Análisis de Datos y Business Intelligence": [
+            "análisis de datos",
+            "data analytics",
+            "microsoft fabric",
+            "power bi",
+            "modelado de datos",
+            "data modeling",
+            "lenguaje natural",
+            "natural language processing"
+        ],
+        "Seguridad y Gobernanza Digital": [
+            "seguridad de datos",
+            "data security",
+            "gobernanza de datos",
+            "data governance",
+            "microsoft purview"
+        ]
+    },
+    "Educación y Formación": {
+        "Transformación Digital Educativa": [
+            "inteligencia artificial educativa",
+            "ai in education",
+            "microsoft 365 copilot",
+            "innovación educativa",
+            "educational innovation"
+        ]
+    },
+    "Análisis de Datos y Bases de Datos": {
+        "Ingeniería y Administración de Datos": [
+            "sql database",
+            "t-sql",
+            "bases de datos sql",
+            "mongodb",
+            "microsoft fabric"
+        ],
+        "Inteligencia de Negocios y Visualización": [
+            "análisis de datos",
+            "data analytics",
+            "power bi",
+            "creación de dashboards",
+            "dashboard creation",
+            "visualización de datos",
+            "data visualization"
+        ]
+    },
+    "Marketing, Ventas y Negocios": {
+        "Estrategias Comerciales": [
+            "marketing de contenidos",
+            "marketing content",
+            "generación de leads",
+            "lead generation",
+            "estrategia de ventas",
+            "sales strategy"
+        ]
+    },
+    "Tecnología de la Información": {
+        "Infraestructura y Colaboración": [
+            "tecnología de la información",
+            "it infrastructure",
+            "colaboración digital",
+            "digital collaboration"
+        ]
+    },
+    "Inteligencia Artificial y Desarrollo": {
+        "Desarrollo de Agentes e IA": [
+            "agentes de ia",
+            "ai agents",
+            "desarrollo low-code",
+            "low-code development",
+            "copilot studio",
+            "inteligencia artificial generativa",
+            "generative artificial intelligence"
+        ]
+    },
+    "Desarrollo Web y Aplicaciones": {
+        "Desarrollo de Plataformas": [
+            "desarrollo web",
+            "web development",
+            "páginas web",
+            "web pages",
+            "bases de datos relacionales",
+            "dataverse"
+        ]
+    },
+    "Desarrollo de Software": {
+        "Ingeniería Web y Aplicaciones": [
+            "desarrollo web",
+            "web development",
+            "asp.net core",
+            "api development"
+        ]
+    }
+}
